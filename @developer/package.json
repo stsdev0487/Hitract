@@ -1,0 +1,19 @@
+{
+  "name": "@Hitract/developer",
+  "description": "Tool to search codebase & help with troubleshooting",
+  "dependencies": {
+    "fxy": "^0.2.7",
+    "express": "^4.17.1",
+    "body-parser": "^1.19.0"
+  },
+  "main": "package/index.js",
+  "private": true,
+  "peerDependencies": {
+    "open": "^6.4.0"
+  },
+  "scripts": {
+    "start": "node server/start.js",
+    "open": "node server/start.js --open"
+  },
+  "version": "0.0.1"
+}

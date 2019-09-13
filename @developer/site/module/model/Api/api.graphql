@@ -1,0 +1,16 @@
+type DataRecord{
+    _date: ISODate!
+    date: Date!
+    moment: Moment!
+    timestamp: Timestamp!
+}
+
+
+type Output{
+    records: [DataRecord]
+    profile(id: ID): Student
+}
+
+schema{
+    query: Output
+}

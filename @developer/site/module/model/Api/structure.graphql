@@ -1,0 +1,1108 @@
+scalar Data
+scalar Decimal
+scalar ISODate
+scalar Number 
+scalar Text
+scalar TF
+scalar Url
+scalar Date
+scalar Moment
+scalar Timestamp
+
+
+enum BuddyStatus{
+	NOT_APPROVED
+	APPROVED
+}
+
+
+#CommentEntityType
+enum CommentEntityType{
+	COMMENT
+	POST
+	STUDENT
+	COMPANY_USER
+	COMPANY
+	COURSE
+	COURSE_TOPIC
+	INSTITUTION_TOPIC
+}
+
+
+#CompanyEmployed
+#CompanyRevenue
+#StudentCompanySizesItems
+#StudentCompanySizesItems
+#CompanyRevenue
+#CompanyEmployed
+enum Size{
+	XS
+	S
+	M
+	L
+	XL
+}
+
+
+
+#CompanyCompanyEmploymentTypesItems
+#CompanyEmploymentTypesItems
+#StudentEmploymentTypesItems
+#StudentEmploymentTypesItems
+#CompanyEmploymentTypesItems
+enum EmploymentType{
+	FULL_TIME
+	PART_TIME
+	EXTRA
+	SUMMER
+	TRAINEE
+	INTERNSHIP
+}
+
+#CompanyPostPostType
+enum CompanyPostPostType{
+	STATUS
+	VIDEO
+	LINK
+	PHOTO
+	UNKNOWN
+	NOTE
+	PROFILE
+	SYSTEM
+	COMPANY
+}
+
+#CourseFileUploadSemester
+enum CourseFileUploadSemester{
+	SPRING
+	AUTUMN
+}
+
+#CourseFileUploadUploadType
+enum CourseFileUploadUploadType{
+	EXAM
+	EXERCISE
+	OTHER
+}
+
+#InspirationFileType
+enum InspirationFileType{
+	IMAGE
+	VIDEO
+}
+
+#NotificationEntityType
+#NotificationEntityType
+enum LikesEntityType{
+	COMMENT
+	POST
+	STUDENT
+	COMPANY_USER
+	COMPANY
+	COURSE
+	COURSE_TOPIC
+	INSTITUTION_TOPIC
+}
+
+enum MetadataMetadataLevel{
+	LEVEL1
+	LEVEL2
+	LEVEL3
+}
+
+#NotificationNotificationType
+enum NotificationNotificationType{
+	INFORMATION
+	COURSE_TOPIC_ANSWER
+	INSTITUTION_TOPIC_ANSWER
+	BUDDY_REQUEST_ACCEPTED
+	BUDDY_REQUEST
+}
+
+#RatingRatingType
+enum RatingRatingType{
+	DIFFICULTY
+	WHAT_LEARNT
+	TEACHER
+	TEMPO
+	FUNNY
+	BRIGADES
+	FACILITIES
+	ACCOMODATION
+	SOCIAL
+	BUSINESS_CONNECTION
+}
+
+enum StudentProvider{
+	FACEBOOK
+}
+
+#StudentRole
+enum StudentRole{
+	ROLE_USER
+	ROLE_ADMIN
+	ROLE_COMPANY_USER
+}
+
+#StudentSex
+enum StudentSex{
+	MALE
+	FEMALE
+	UNKNOWN
+}
+
+#StudentUserStatus
+enum StudentUserStatus{
+	ACTIVE
+	DEACTIVE
+	DELETED
+}
+
+interface DataLifecycle{
+	created: ISODate!
+	createdAgoText: Text
+	createdNumberOfDaysAgo: Number
+	id: ID!
+	updated: ISODate!
+	views: Number
+}
+
+
+
+type Buddy{
+	buddyId: ID
+	created: ISODate
+	createdAgoText: Text
+	createdNumberOfDaysAgo: Number
+	id: ID!
+	status: Text
+	type: Text
+	updated: ISODate
+}
+
+
+
+
+
+type Characteristic{
+	characteristicId: ID
+	characteristicName: Text
+	created: ISODate
+	createdAgoText: Text
+	createdNumberOfDaysAgo: Number
+	id: ID!
+	type: Text
+	updated: ISODate
+}
+
+
+
+
+
+
+type City{
+	cityId: ID
+	cityName: Text
+	created: ISODate
+	createdAgoText: Text
+	createdNumberOfDaysAgo: Number
+	id: ID!
+	type: Text
+	updated: ISODate
+}
+
+
+
+
+
+
+type Comment{
+	commentId: ID
+	comments: [Comment]
+	content: Text
+	created: ISODate
+	createdAgoText: Text
+	createdNumberOfDaysAgo: Number
+	entityId: ID
+	entityType: Text
+	id: ID!
+	likes: [Likes]
+	type: Text
+	updated: ISODate
+}
+
+
+
+type Common{
+	created: ISODate
+	createdAgoText: Text
+	createdNumberOfDaysAgo: Number
+	id: ID!
+	type: Text
+	updated: ISODate
+}
+
+
+
+type Company{
+	about: Text
+	companyEmploymentTypes: [EmploymentType]
+	companyId: ID
+	companyName: Text
+	companyPosts: [CompanyPost]
+	
+	counties: [County]
+	created: ISODate
+	createdAgoText: Text
+	createdNumberOfDaysAgo: Number
+	employed: Text
+	employmentTypes: [EmploymentType]
+	facebookPage: Text
+	followers: [CompanyFollower]
+	founded: Number
+	headerPictureUrl: Url
+	headquarters: Text
+	homepage: Text
+	id: ID!
+	industries: [Industry]
+	pictureUrl: Url
+	revenue: Text
+	type: Text
+	updated: ISODate
+}
+
+
+
+type CompanyFollower{
+	boost: Number
+	created: ISODate
+	followerId: ID
+	id: ID!
+	updated: ISODate
+}
+
+
+
+
+
+type CompanyPost{
+	authorName: Text
+	comments: [Comment]
+	companyPostId: ID
+	created: ISODate
+	createdAgoText: Text
+	createdNumberOfDaysAgo: Number
+	header: Text
+	id: ID
+	likes: [Likes]
+	logo: Text
+	postText: Text
+	postType: Text
+	resource: Text
+	source: Text
+	type: Text
+	updated: ISODate
+}
+
+
+
+type CompanySearch{
+	companyId: ID
+	companyName: Text
+	created: ISODate
+	createdAgoText: Text
+	createdNumberOfDaysAgo: Number
+	headerPictureUrl: Text
+	id: ID!
+	pictureUrl: Url
+	type: Text
+	updated: ISODate
+}
+
+
+
+type CompanySize{
+	companySizeId: ID
+	companySizeName: Text
+	companySizeRangeEnd: Number
+	companySizeRangeStart: Number
+	created: ISODate
+	id: ID!
+	updated: ISODate
+}
+
+
+
+type CompanyType{
+	companyTypeId: ID
+	companyTypeName: Text
+	created: ISODate
+	id: ID!
+	updated: ISODate
+}
+
+
+
+
+type Conversation{
+	allUnseenMessages: [ConversationMessage]
+	allUsers: [UserConversation]
+	conversationId: ID
+	conversationMessages: [ConversationMessage]
+	created: ISODate
+	createdAgoText: Text
+	createdNumberOfDaysAgo: Number
+	id: ID!
+	studentConversations: [UserConversation]
+	type: Text
+	updated: ISODate
+}
+
+
+
+type ConversationMessage{
+	content: Text
+	created: ISODate
+	createdAgoText: Text
+	createdNumberOfDaysAgo: Number
+	id: ID!
+	messageId: ID
+	type: Text
+	updated: ISODate
+}
+
+
+
+type County{
+	cities: [City]
+	countyId: ID
+	countyName: Text
+	created: ISODate
+	createdAgoText: Text
+	createdNumberOfDaysAgo: Number
+	id: ID!
+	type: Text
+	updated: ISODate
+}
+
+
+type Course{
+	averageDifficultyScore: Number
+	averageFunnyScore: Number
+	averageScore: Number
+	averageTeacherScore: Number
+	averageTempoScore: Number
+	averageWhatLearntScore: Number
+	comments: [Comment]
+	courseCode: Text
+	courseFileUploads: [CourseFileUpload]
+	courseId: ID
+	courseRatings: [CourseRating]
+	courseTopics: [CourseTopic]
+	created: ISODate
+	createdAgoText: Text
+	createdNumberOfDaysAgo: Number
+	creditSystem: Text
+	credits: Number
+	descriptionEn: Text
+	descriptionSv: Text
+	educationLevel: Text
+	education_level: Text
+	examUploads: [CourseFileUpload]
+	excerciseUploads: [CourseFileUpload]
+	id: ID!
+	metadatas: [Metadata]
+	otherUploads: [CourseFileUpload]
+	randomMetadataImageUrl: Url
+
+	ratings: [Rating]
+	subjects: [Subject]
+	titleEn: Text
+	titleSv: Text
+	type: Text
+
+	updated: ISODate
+	views: Number
+}
+
+
+
+type CourseFileUpload{
+	courseFileUploadId: ID
+	created: ISODate
+	createdAgoText: Text
+	createdNumberOfDaysAgo: Number
+	file: Text
+	filename: Text
+	id: ID!
+	mimeType: Text
+	semester: Text
+	size: Number
+	type: Text
+	updated: ISODate
+	uploadType: Text
+	year: Text
+}
+
+
+
+type CourseRating{
+	courseRatingId: ID
+	created: ISODate
+	difficulty: Number
+	extraInfo: Text
+	funny: Number
+	id: ID!
+	teacher: Number
+	tempo: Number
+	type: Text
+	updated: ISODate
+	whatLearnt: Number
+}
+
+
+
+type CourseSearch{
+	courseCode: Text
+	courseId: ID
+	created: ISODate
+	createdAgoText: Text
+	createdNumberOfDaysAgo: Number
+	id: ID!
+	titleEn: Text
+	titleSv: Text
+	type: Text
+	updated: ISODate
+}
+
+
+
+type CourseTopic{
+	content: Text
+	courseTopicId: ID
+	courseTopicPosts: [CourseTopicPost]
+	created: ISODate
+	createdAgoText: Text
+	createdNumberOfDaysAgo: Number
+	header: Text
+	id: ID!
+	type: Text
+	updated: ISODate
+	views: Number
+}
+
+
+
+
+type CourseTopicPost{
+	content: Text
+	courseTopicPostId: ID
+	created: ISODate
+	createdAgoText: Text
+	createdNumberOfDaysAgo: Number
+	downVoters: [Student]
+	id: ID!
+	type: Text
+	upVoters: [Student]
+	updated: ISODate
+}
+
+
+
+type Grade{
+	created: ISODate
+	grade: Text
+	gradeId: ID
+	id: ID!
+	updated: ISODate
+	value: Number
+}
+
+
+
+
+type Hobby{
+	created: ISODate
+	createdAgoText: Text
+	createdNumberOfDaysAgo: Number
+	description: Text
+	hobbyId: ID
+	hobbyName: Text
+	id: ID!
+	image: Text
+	metadatas: [Metadata]
+	students: [Student]
+	type: Text
+	updated: ISODate
+}
+
+
+
+type Image{
+	created: ISODate
+	createdAgoText: Text
+	createdNumberOfDaysAgo: Number
+	id: ID!
+	imageId: ID
+	large: Url
+	medium: Url
+	small: Url
+	thumbnail: Url
+	type: Text
+	updated: ISODate
+}
+
+
+type Industry{
+	children: [Industry]
+	created: ISODate
+	createdAgoText: Text
+	createdNumberOfDaysAgo: Number
+	id: ID!
+	industryId: ID
+	industryName: Text
+	pictures: [Image]
+	type: Text
+	updated: ISODate
+}
+
+type Inspiration{
+	caption: Text
+	created: ISODate
+	createdAgoText: Text
+	createdNumberOfDaysAgo: Number
+	fileType: Text
+	id: ID!
+	inspirationId: ID
+	type: Text
+	updated: ISODate
+}
+
+type InspirationCollection{
+	caption: Text
+	created: ISODate
+	createdAgoText: Text
+	createdNumberOfDaysAgo: Number
+	id: ID!
+	inspirationCollectionId: ID
+	inspirations: [Inspiration]
+	title: Text
+	type: Text
+	updated: ISODate
+}
+
+type Institution{
+	averageScore: Number
+	created: ISODate
+	createdAgoText: Text
+	createdNumberOfDaysAgo: Number
+	description: Text
+	id: ID!
+	institutionCode: Text
+	institutionId: ID
+	institutionName: Text
+	institutionShortName: Text
+	institutionTopics: [InstitutionTopic]
+	institutionWikiUrl: Text
+	institution_id: ID!
+	largeImageUrl: Text
+	logo: Text
+	mediumImageUrl: Text
+	pictureDescription: Text
+	pictureUrl: Url
+	pictureWikiUrl: Url
+	ratings: [Rating]
+	smallImageUrl: Text
+	type: Text
+	updated: ISODate
+}
+
+
+
+type InstitutionSearch{
+	created: ISODate
+	createdAgoText: Text
+	createdNumberOfDaysAgo: Number
+	id: ID!
+	institutionCode: Text
+	institutionId: ID
+	institutionName: Text
+	institutionShortName: Text
+	smallImageUrl: Text
+	type: Text
+	updated: ISODate
+}
+
+
+
+type InstitutionTopic{
+	content: Text
+	created: ISODate
+	createdAgoText: Text
+	createdNumberOfDaysAgo: Number
+	header: Text
+	id: ID!
+	institutionTopicId: ID
+	institutionTopicPosts: [InstitutionTopicPost]
+	type: Text
+	updated: ISODate
+	views: Number
+}
+
+
+type InstitutionTopicPost{
+	content: Text
+	created: ISODate
+	createdAgoText: Text
+	createdNumberOfDaysAgo: Number
+	downVoters: [StudentSearch]
+	id: ID!
+	institutionTopicPostId: ID
+	type: Text
+	upVoters: [StudentSearch]
+	updated: ISODate
+}
+
+
+
+type Keyword{
+	created: ISODate
+	createdAgoText: Text
+	createdNumberOfDaysAgo: Number
+	id: ID!
+	keyword: Text
+	keywordId: ID
+	type: Text
+	updated: ISODate
+}
+
+
+type Likes{
+	created: ISODate
+	entityId: ID
+	entityType: Text
+	id: ID!
+	likeId: ID
+	updated: ISODate
+}
+
+type Metadata{
+	childs: [Metadata]
+	courses: [Course]
+	created: ISODate
+	createdAgoText: Text
+	createdNumberOfDaysAgo: Number
+	id: ID!
+	keywords: [Keyword]
+	metadataId: ID
+	metadataImages: [MetadataImage]
+	metadataLevel: Text
+	metadataName: Text
+	subjects: [Subject]
+	type: Text
+	updated: ISODate
+}
+
+type MetadataImage{
+	created: ISODate
+	id: ID!
+	imageUrl: Text
+	metadataImageId: ID
+	tagline: Text
+	updated: ISODate
+	wikilink: Text
+	wikilinkDisplayName: Text
+}
+
+type MetadataSearch{
+	created: ISODate
+	createdAgoText: Text
+	createdNumberOfDaysAgo: Number
+	id: ID!
+	type: Text
+	updated: ISODate
+}
+
+
+
+type Notification{
+	clicked: TF
+	created: ISODate
+	createdAgoText: Text
+	createdNumberOfDaysAgo: Number
+	entityId: ID
+	entityType: Text
+	id: ID!
+	information: Text
+	notificationId: ID
+	notificationType: Text
+	seen: TF
+	type: Text
+	updated: ISODate
+}
+
+
+
+type PageCharacteristic{
+	content: [Characteristic]
+	first: TF
+	last: TF
+	number: Number
+	numberOfElements: Number
+	size: Number
+	totalElements: Number
+	totalPages: Number
+}
+
+type PageComment{
+	content: [Comment]
+	first: TF
+	last: TF
+	number: Number
+	numberOfElements: Number
+	size: Number
+	totalElements: Number
+	totalPages: Number
+}
+
+type PageCompany{
+	content: [Company]
+	first: TF
+	last: TF
+	number: Number
+	numberOfElements: Number
+	size: Number
+	totalElements: Number
+	totalPages: Number
+}
+
+type PageCompanyPost{
+	content: [CompanyPost]
+	first: TF
+	last: TF
+	number: Number
+	numberOfElements: Number
+	size: Number
+	totalElements: Number
+	totalPages: Number
+}
+
+type PageCounty{
+	content: [County]
+	first: TF
+	last: TF
+	number: Number
+	numberOfElements: Number
+	size: Number
+	totalElements: Number
+	totalPages: Number
+}
+
+type PageCourse{
+	content: [Course]
+	first: TF
+	last: TF
+	number: Number
+	numberOfElements: Number
+	size: Number
+	totalElements: Number
+	totalPages: Number
+}
+
+type PageCourseTopic{
+	content: [CourseTopic]
+	first: TF
+	last: TF
+	number: Number
+	numberOfElements: Number
+	size: Number
+	totalElements: Number
+	totalPages: Number
+}
+
+type PageHobby{
+	content: [Hobby]
+	first: TF
+	last: TF
+	number: Number
+	numberOfElements: Number
+	size: Number
+	totalElements: Number
+	totalPages: Number
+}
+
+type PageIndustry{
+	content: [Industry]
+	first: TF
+	last: TF
+	number: Number
+	numberOfElements: Number
+	size: Number
+	totalElements: Number
+	totalPages: Number
+}
+
+type PageInstitution{
+	content: [Institution]
+	first: TF
+	last: TF
+	number: Number
+	numberOfElements: Number
+	size: Number
+	totalElements: Number
+	totalPages: Number
+}
+
+type PageMetadata{
+	content: [Metadata]
+	first: TF
+	last: TF
+	number: Number
+	numberOfElements: Number
+	size: Number
+	totalElements: Number
+	totalPages: Number
+}
+
+type PageRequestLog{
+	content: [RequestLog]
+	first: TF
+	last: TF
+	number: Number
+	numberOfElements: Number
+	size: Number
+	totalElements: Number
+	totalPages: Number
+}
+
+type PageStudent{
+	content: [Student]
+	first: TF
+	last: TF
+	number: Number
+	numberOfElements: Number
+	size: Number
+	totalElements: Number
+	totalPages: Number
+}
+
+type PageSubject{
+	content: [Subject]
+	first: TF
+	last: TF
+	number: Number
+	numberOfElements: Number
+	size: Number
+	totalElements: Number
+	totalPages: Number
+}
+
+type Post{
+	feedPostType: Text
+	objects: [Common]
+}
+
+type Rating{
+	averageScore: Number
+	countRatings: Number
+	created: ISODate
+	createdAgoText: Text
+	createdNumberOfDaysAgo: Number
+	id: ID!
+	ratingId: ID
+	ratingType: Text
+	studentRatings: [StudentRating]
+	totalScore: Number
+	type: Text
+	updated: ISODate
+}
+
+type RequestData{
+	requestDataId: ID
+	requestPaylod: Text
+}
+
+
+
+type RequestLog{
+	created: ISODate
+	createdAgoText: Text
+	createdNumberOfDaysAgo: Number
+	duration: Number
+	httpResponseCode: Text
+	id: ID!
+	method: Text
+	requestLogId: ID
+	requestStartedDate: Text
+	type: Text
+	updated: ISODate
+	uri: Text
+	username: Text
+}
+
+
+
+
+type Student{
+	aboutMe(snippet: TF = true): Text
+	age: Number
+	birthDate: Text
+	birthDateFormatted: Text
+	buddies: [Buddy]
+	characteristics: [Characteristic]
+	companySizes: [Size]
+	conversations: [UserConversation]
+	counties: [County]
+	courseTopicPosts: [CourseTopicPost]
+	courseTopics: [CourseTopic]
+	created: ISODate
+	createdAgoText: Date
+	createdNumberOfDaysAgo: Timestamp
+	email: Text
+	employmentTypes: [EmploymentType]
+	firstName: Text
+	fullName: Text
+	hasSetAboutMe: TF
+	id: ID!
+	identifier: Text
+	inspirationCollections: [InspirationCollection]
+	institutionTopicPosts: [InstitutionTopicPost]
+	institutionTopics: [InstitutionTopic]
+	institutions: [InstitutionSearch]
+	lastName: Text
+	metadataNames: [Text]
+	notApprovedBuddiesRequests: [Buddy]
+	notApprovedBuddiesResponses: [Buddy]
+	notifications: [Notification]
+	numberOfBuddies: Number
+	numberOfCourses: Number
+	officialId: ID
+	pictureUrl: Url
+	personalNumber: Text
+	provider: Text
+	role: Text
+	sex: Text
+	studentCourses: [StudentCourse]
+	studentHobbies: [Hobby]
+	studentId: ID
+	studentIndustries: [Industry]
+	studentRatings: [StudentRating]
+	type: Text
+	unreadMessages: Number
+	unreadNotifications: Number
+	updated: ISODate
+	userStatus: Text
+	verified: TF
+	workExperiences: [WorkExperience]
+}
+
+
+
+type StudentCourse{
+	important: TF
+	studentCourseId: ID
+	visible: TF
+}
+
+type StudentFeed{
+	created: ISODate
+	feedPosts: [StudentFeedPost]
+	id: ID!
+	studentFeedId: ID
+	updated: ISODate
+}
+
+type StudentFeedPost{
+	boost: Number
+	created: ISODate
+	feedPostId: ID
+	id: ID!
+	updated: ISODate
+}
+
+
+
+type StudentRating{
+	created: ISODate
+	id: ID!
+	score: Number
+	studentRatingId: ID
+	updated: ISODate
+}
+
+
+
+type StudentSearch{
+	created: ISODate
+	createdAgoText: Text
+	createdNumberOfDaysAgo: Number
+	firstName: Text
+	fullName: Text
+	id: ID!
+	lastName: Text
+	pictureUrl: Url
+	studentId: ID
+	type: Text
+	updated: ISODate
+}
+
+
+
+
+
+type Subject{
+	created: ISODate
+	createdAgoText: Text
+	createdNumberOfDaysAgo: Number
+	description: Text
+	id: ID!
+	metadatas: [Metadata]
+	subjectCode: Text
+	subjectId: ID
+	type: Text
+	updated: ISODate
+}
+
+
+type UserConversation{
+	seen: TF
+	type: Text
+	userConversationId: ID
+}
+
+extend type UserConversation implements DataLifecycle{
+	created: ISODate!
+	createdAgoText: Text
+	createdNumberOfDaysAgo: Number
+	id: ID!
+	updated: ISODate!
+	views: Number
+}
+
+
+
+
+type WorkExperience implements DataLifecycle{
+	metadatas: [Metadata]
+	onGoing: TF
+	type: Text
+	workExperienceCompany: Text
+	workExperienceFrom: Text
+	workExperienceFromFormatted: Text
+	workExperienceId: ID
+	workExperienceRole: Text
+	workExperienceTo: Text
+	workExperienceToFormatted: Text
+}
+
+extend type WorkExperience{
+	created: ISODate!
+	createdAgoText: Text
+	createdNumberOfDaysAgo: Number
+	id: ID!
+	updated: ISODate!
+	views: Number
+}
+
+
+

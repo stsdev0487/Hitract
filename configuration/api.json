@@ -1,0 +1,90 @@
+{
+	"domain":"https://test.hitract.se/",
+	"endpoint": {
+		"authenticate": {
+			"path": "/api/auth/signin",
+			"url": "/api/auth/signin",
+			"type": "post",
+			"body": {
+				"provider": "facebook",
+				"inputToken": "FACEBOOK ACCESS TOKEN"
+			},
+			"response": {
+				"user_id": "facebookUserId",
+				"provider": "facebook",
+				"auth_token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDE1NTg2NDY0NjA4NTAxMSIsInJvbGUiOiJST0xFX1VTRVIiLCJpYXQiOjE1NjMxNzcwMDUsImV4cCI6MTU2MzUzNzAwNX0.FYJONSn4E3pLR4PuaCi8WQAuQ19iOrLbuuvJopnfSZI"
+			}
+		},
+		"studentFeed": {
+			"path": "feed/posts",
+			"type": "get",
+			"url": "/api/${api.studentProfile.path}/${parameter.id}/${api.studentFeed.path}"
+		},
+		"studentProfile": {
+			"path": "student",
+			"type": "get",
+			"url": "/api/${api.studentProfile.path}/${parameter.id}"
+		},
+		"course": {
+			"path": "course",
+			"type": "get",
+			"url": "/api/${api.course.path}/${parameter.id}"
+		},
+		"courseList": {
+			"path": "course",
+			"type": "get",
+			"url": "/api/${api.course.path}/getAll"
+		},
+		"institution": {
+			"path": "institution",
+			"type": "get",
+			"url": "/api/${api.institution.path}/${parameter.id}"
+		},
+		"institutionList": {
+			"path": "institution",
+			"type": "get",
+			"url": "/api/${api.institution.path}/getAll"
+		},
+		"metadataList": {
+			"path": "metadata",
+			"type": "get",
+			"url": "/api/${api.metadataList.path}/getAll"
+		},
+		"university": {
+			"path": "institution",
+			"type": "get",
+			"url": "/api/${api.institution.path}/${parameter.id}"
+		},
+		"universityList": {
+			"path": "institution",
+			"type": "get",
+			"url": "/api/${api.institution.path}/getAll"
+		},
+		"company": {
+			"path": "company",
+			"type": "get",
+			"url": "/api/${api.company.path}/${parameter.id}"
+		},
+		"companyList": {
+			"path": "company",
+			"type": "get",
+			"url": "/api/${api.company.path}/getAll"
+		},
+
+
+
+
+		"testStudent": {
+			"path": "student",
+			"url": "/api/${api.testStudent.path}/${parameter.id}",
+			"test": true
+		},
+
+		"testFeedPosts": {
+			"path": "feed/posts",
+			"url": "/api/${api.testStudent.path}/${parameter.id}/${api.testFeedPosts.path}",
+			"test": true
+		}
+
+	}
+}

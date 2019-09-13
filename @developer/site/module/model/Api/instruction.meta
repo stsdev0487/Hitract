@@ -1,0 +1,2021 @@
+enums:
+  - - BuddyDTO.status
+    - - NOT_APPROVED
+      - APPROVED
+  - - Comment.entityType
+    - - COMMENT
+      - POST
+      - STUDENT
+      - COMPANY_USER
+      - COMPANY
+      - COURSE
+      - COURSE_TOPIC
+      - INSTITUTION_TOPIC
+  - - CommentDTO.entityType
+    - - COMMENT
+      - POST
+      - STUDENT
+      - COMPANY_USER
+      - COMPANY
+      - COURSE
+      - COURSE_TOPIC
+      - INSTITUTION_TOPIC
+  - - Company.employed
+    - - XS
+      - S
+      - M
+      - L
+      - XL
+  - - Company.employmentTypes.items
+    - - FULL_TIME
+      - PART_TIME
+      - EXTRA
+      - SUMMER
+      - TRAINEE
+      - INTERNSHIP
+  - - Company.revenue
+    - - XS
+      - S
+      - M
+      - L
+      - XL
+  - - CompanyDTO.companyEmploymentTypes.items
+    - - FULL_TIME
+      - PART_TIME
+      - EXTRA
+      - SUMMER
+      - TRAINEE
+      - INTERNSHIP
+  - - CompanyDTO.employed
+    - - XS
+      - S
+      - M
+      - L
+      - XL
+  - - CompanyDTO.employmentTypes.items
+    - - FULL_TIME
+      - PART_TIME
+      - EXTRA
+      - SUMMER
+      - TRAINEE
+      - INTERNSHIP
+  - - CompanyDTO.revenue
+    - - XS
+      - S
+      - M
+      - L
+      - XL
+  - - CompanyPost.postType
+    - - STATUS
+      - VIDEO
+      - LINK
+      - PHOTO
+      - UNKNOWN
+      - NOTE
+      - PROFILE
+      - SYSTEM
+      - COMPANY
+  - - CompanyPostDTO.postType
+    - - STATUS
+      - VIDEO
+      - LINK
+      - PHOTO
+      - UNKNOWN
+      - NOTE
+      - PROFILE
+      - SYSTEM
+      - COMPANY
+  - - CourseFileUpload.semester
+    - - SPRING
+      - AUTUMN
+  - - CourseFileUpload.uploadType
+    - - EXAM
+      - EXERCISE
+      - OTHER
+  - - CourseFileUploadDTO.semester
+    - - SPRING
+      - AUTUMN
+  - - CourseFileUploadDTO.uploadType
+    - - EXAM
+      - EXERCISE
+      - OTHER
+  - - Inspiration.fileType
+    - - IMAGE
+      - VIDEO
+  - - InspirationDTO.fileType
+    - - IMAGE
+      - VIDEO
+  - - Likes.entityType
+    - - COMMENT
+      - POST
+      - STUDENT
+      - COMPANY_USER
+      - COMPANY
+      - COURSE
+      - COURSE_TOPIC
+      - INSTITUTION_TOPIC
+  - - Metadata.metadataLevel
+    - - LEVEL1
+      - LEVEL2
+      - LEVEL3
+  - - Notification.entityType
+    - - COMMENT
+      - POST
+      - STUDENT
+      - COMPANY_USER
+      - COMPANY
+      - COURSE
+      - COURSE_TOPIC
+      - INSTITUTION_TOPIC
+  - - Notification.notificationType
+    - - INFORMATION
+      - COURSE_TOPIC_ANSWER
+      - INSTITUTION_TOPIC_ANSWER
+      - BUDDY_REQUEST_ACCEPTED
+      - BUDDY_REQUEST
+  - - NotificationDTO.entityType
+    - - COMMENT
+      - POST
+      - STUDENT
+      - COMPANY_USER
+      - COMPANY
+      - COURSE
+      - COURSE_TOPIC
+      - INSTITUTION_TOPIC
+  - - NotificationDTO.notificationType
+    - - INFORMATION
+      - COURSE_TOPIC_ANSWER
+      - INSTITUTION_TOPIC_ANSWER
+      - BUDDY_REQUEST_ACCEPTED
+      - BUDDY_REQUEST
+  - - Rating.ratingType
+    - - DIFFICULTY
+      - WHAT_LEARNT
+      - TEACHER
+      - TEMPO
+      - FUNNY
+      - BRIGADES
+      - FACILITIES
+      - ACCOMODATION
+      - SOCIAL
+      - BUSINESS_CONNECTION
+  - - RatingDTO.ratingType
+    - - DIFFICULTY
+      - WHAT_LEARNT
+      - TEACHER
+      - TEMPO
+      - FUNNY
+      - BRIGADES
+      - FACILITIES
+      - ACCOMODATION
+      - SOCIAL
+      - BUSINESS_CONNECTION
+  - - Student.companySizes.items
+    - - XS
+      - S
+      - M
+      - L
+      - XL
+  - - Student.employmentTypes.items
+    - - FULL_TIME
+      - PART_TIME
+      - EXTRA
+      - SUMMER
+      - TRAINEE
+      - INTERNSHIP
+  - - Student.provider
+    - - FACEBOOK
+  - - Student.role
+    - - ROLE_USER
+      - ROLE_ADMIN
+      - ROLE_COMPANY_USER
+  - - Student.sex
+    - - MALE
+      - FEMALE
+      - UNKNOWN
+  - - Student.userStatus
+    - - ACTIVE
+      - DEACTIVE
+      - DELETED
+  - - StudentDTO.companySizes.items
+    - - XS
+      - S
+      - M
+      - L
+      - XL
+  - - StudentDTO.employmentTypes.items
+    - - FULL_TIME
+      - PART_TIME
+      - EXTRA
+      - SUMMER
+      - TRAINEE
+      - INTERNSHIP
+  - - StudentDTO.role
+    - - ROLE_USER
+      - ROLE_ADMIN
+      - ROLE_COMPANY_USER
+  - - StudentDTO.sex
+    - - MALE
+      - FEMALE
+      - UNKNOWN
+  - - StudentDTO.userStatus
+    - - ACTIVE
+      - DEACTIVE
+      - DELETED
+formats:
+  - - BuddyDTO.properties.buddyId.format
+    - int64
+  - - BuddyDTO.properties.created.format
+    - date-time
+  - - BuddyDTO.properties.createdNumberOfDaysAgo.format
+    - int64
+  - - BuddyDTO.properties.id.format
+    - int64
+  - - BuddyDTO.properties.updated.format
+    - date-time
+  - - Characteristic.properties.characteristicId.format
+    - int64
+  - - Characteristic.properties.created.format
+    - date-time
+  - - Characteristic.properties.id.format
+    - int64
+  - - Characteristic.properties.updated.format
+    - date-time
+  - - CharacteristicDTO.properties.characteristicId.format
+    - int64
+  - - CharacteristicDTO.properties.created.format
+    - date-time
+  - - CharacteristicDTO.properties.createdNumberOfDaysAgo.format
+    - int64
+  - - CharacteristicDTO.properties.id.format
+    - int64
+  - - CharacteristicDTO.properties.updated.format
+    - date-time
+  - - City.properties.cityId.format
+    - int64
+  - - City.properties.created.format
+    - date-time
+  - - City.properties.id.format
+    - int64
+  - - City.properties.updated.format
+    - date-time
+  - - CityDTO.properties.cityId.format
+    - int64
+  - - CityDTO.properties.created.format
+    - date-time
+  - - CityDTO.properties.createdNumberOfDaysAgo.format
+    - int64
+  - - CityDTO.properties.id.format
+    - int64
+  - - CityDTO.properties.updated.format
+    - date-time
+  - - Comment.properties.commentId.format
+    - int64
+  - - Comment.properties.created.format
+    - date-time
+  - - Comment.properties.entityId.format
+    - int64
+  - - Comment.properties.id.format
+    - int64
+  - - Comment.properties.updated.format
+    - date-time
+  - - CommentDTO.properties.commentId.format
+    - int64
+  - - CommentDTO.properties.comments.format
+    - int32
+  - - CommentDTO.properties.created.format
+    - date-time
+  - - CommentDTO.properties.createdNumberOfDaysAgo.format
+    - int64
+  - - CommentDTO.properties.entityId.format
+    - int64
+  - - CommentDTO.properties.id.format
+    - int64
+  - - CommentDTO.properties.updated.format
+    - date-time
+  - - CommonDTO.properties.created.format
+    - date-time
+  - - CommonDTO.properties.createdNumberOfDaysAgo.format
+    - int64
+  - - CommonDTO.properties.id.format
+    - int64
+  - - CommonDTO.properties.updated.format
+    - date-time
+  - - Company.properties.companyId.format
+    - int64
+  - - Company.properties.created.format
+    - date-time
+  - - Company.properties.founded.format
+    - int64
+  - - Company.properties.id.format
+    - int64
+  - - Company.properties.updated.format
+    - date-time
+  - - CompanyDTO.properties.companyId.format
+    - int64
+  - - CompanyDTO.properties.created.format
+    - date-time
+  - - CompanyDTO.properties.createdNumberOfDaysAgo.format
+    - int64
+  - - CompanyDTO.properties.founded.format
+    - int64
+  - - CompanyDTO.properties.id.format
+    - int64
+  - - CompanyDTO.properties.updated.format
+    - date-time
+  - - CompanyFollower.properties.boost.format
+    - int64
+  - - CompanyFollower.properties.created.format
+    - date-time
+  - - CompanyFollower.properties.followerId.format
+    - int64
+  - - CompanyFollower.properties.id.format
+    - int64
+  - - CompanyFollower.properties.updated.format
+    - date-time
+  - - CompanyPost.properties.companyPostId.format
+    - int64
+  - - CompanyPost.properties.created.format
+    - date-time
+  - - CompanyPost.properties.id.format
+    - int64
+  - - CompanyPost.properties.updated.format
+    - date-time
+  - - CompanyPostDTO.properties.comments.format
+    - int32
+  - - CompanyPostDTO.properties.companyPostId.format
+    - int64
+  - - CompanyPostDTO.properties.created.format
+    - date-time
+  - - CompanyPostDTO.properties.createdNumberOfDaysAgo.format
+    - int64
+  - - CompanyPostDTO.properties.id.format
+    - int64
+  - - CompanyPostDTO.properties.updated.format
+    - date-time
+  - - CompanySearchDTO.properties.companyId.format
+    - int64
+  - - CompanySearchDTO.properties.created.format
+    - date-time
+  - - CompanySearchDTO.properties.createdNumberOfDaysAgo.format
+    - int64
+  - - CompanySearchDTO.properties.id.format
+    - int64
+  - - CompanySearchDTO.properties.updated.format
+    - date-time
+  - - CompanySize.properties.companySizeId.format
+    - int64
+  - - CompanySize.properties.companySizeRangeEnd.format
+    - int32
+  - - CompanySize.properties.companySizeRangeStart.format
+    - int32
+  - - CompanySize.properties.created.format
+    - date-time
+  - - CompanySize.properties.id.format
+    - int64
+  - - CompanySize.properties.updated.format
+    - date-time
+  - - CompanyType.properties.companyTypeId.format
+    - int64
+  - - CompanyType.properties.created.format
+    - date-time
+  - - CompanyType.properties.id.format
+    - int64
+  - - CompanyType.properties.updated.format
+    - date-time
+  - - Conversation.properties.conversationId.format
+    - int64
+  - - Conversation.properties.created.format
+    - date-time
+  - - Conversation.properties.id.format
+    - int64
+  - - Conversation.properties.updated.format
+    - date-time
+  - - ConversationDTO.properties.conversationId.format
+    - int64
+  - - ConversationDTO.properties.created.format
+    - date-time
+  - - ConversationDTO.properties.createdNumberOfDaysAgo.format
+    - int64
+  - - ConversationDTO.properties.id.format
+    - int64
+  - - ConversationDTO.properties.updated.format
+    - date-time
+  - - ConversationMessage.properties.created.format
+    - date-time
+  - - ConversationMessage.properties.id.format
+    - int64
+  - - ConversationMessage.properties.messageId.format
+    - int64
+  - - ConversationMessage.properties.updated.format
+    - date-time
+  - - ConversationMessageDTO.properties.created.format
+    - date-time
+  - - ConversationMessageDTO.properties.createdNumberOfDaysAgo.format
+    - int64
+  - - ConversationMessageDTO.properties.id.format
+    - int64
+  - - ConversationMessageDTO.properties.messageId.format
+    - int64
+  - - ConversationMessageDTO.properties.updated.format
+    - date-time
+  - - County.properties.countyId.format
+    - int64
+  - - County.properties.created.format
+    - date-time
+  - - County.properties.id.format
+    - int64
+  - - County.properties.updated.format
+    - date-time
+  - - CountyDTO.properties.countyId.format
+    - int64
+  - - CountyDTO.properties.created.format
+    - date-time
+  - - CountyDTO.properties.createdNumberOfDaysAgo.format
+    - int64
+  - - CountyDTO.properties.id.format
+    - int64
+  - - CountyDTO.properties.updated.format
+    - date-time
+  - - Course.properties.courseId.format
+    - int64
+  - - Course.properties.created.format
+    - date-time
+  - - Course.properties.id.format
+    - int64
+  - - Course.properties.updated.format
+    - date-time
+  - - Course.properties.views.format
+    - int32
+  - - CourseDTO.properties.averageDifficultyScore.format
+    - double
+  - - CourseDTO.properties.averageFunnyScore.format
+    - double
+  - - CourseDTO.properties.averageScore.format
+    - double
+  - - CourseDTO.properties.averageTeacherScore.format
+    - double
+  - - CourseDTO.properties.averageTempoScore.format
+    - double
+  - - CourseDTO.properties.averageWhatLearntScore.format
+    - double
+  - - CourseDTO.properties.courseId.format
+    - int64
+  - - CourseDTO.properties.created.format
+    - date-time
+  - - CourseDTO.properties.createdNumberOfDaysAgo.format
+    - int64
+  - - CourseDTO.properties.id.format
+    - int64
+  - - CourseDTO.properties.updated.format
+    - date-time
+  - - CourseDTO.properties.views.format
+    - int32
+  - - CourseFileUpload.properties.courseFileUploadId.format
+    - int64
+  - - CourseFileUpload.properties.created.format
+    - date-time
+  - - CourseFileUpload.properties.file.format
+    - byte
+  - - CourseFileUpload.properties.id.format
+    - int64
+  - - CourseFileUpload.properties.size.format
+    - int32
+  - - CourseFileUpload.properties.updated.format
+    - date-time
+  - - CourseFileUploadDTO.properties.courseFileUploadId.format
+    - int64
+  - - CourseFileUploadDTO.properties.created.format
+    - date-time
+  - - CourseFileUploadDTO.properties.createdNumberOfDaysAgo.format
+    - int64
+  - - CourseFileUploadDTO.properties.id.format
+    - int64
+  - - CourseFileUploadDTO.properties.size.format
+    - int32
+  - - CourseFileUploadDTO.properties.updated.format
+    - date-time
+  - - CourseRating.properties.courseRatingId.format
+    - int64
+  - - CourseRating.properties.created.format
+    - date-time
+  - - CourseRating.properties.difficulty.format
+    - int32
+  - - CourseRating.properties.funny.format
+    - int32
+  - - CourseRating.properties.id.format
+    - int64
+  - - CourseRating.properties.teacher.format
+    - int32
+  - - CourseRating.properties.tempo.format
+    - int32
+  - - CourseRating.properties.updated.format
+    - date-time
+  - - CourseRating.properties.whatLearnt.format
+    - int32
+  - - CourseRatingDTO.properties.courseRatingId.format
+    - int64
+  - - CourseRatingDTO.properties.created.format
+    - date-time
+  - - CourseRatingDTO.properties.difficulty.format
+    - int32
+  - - CourseRatingDTO.properties.funny.format
+    - int32
+  - - CourseRatingDTO.properties.teacher.format
+    - int32
+  - - CourseRatingDTO.properties.tempo.format
+    - int32
+  - - CourseRatingDTO.properties.updated.format
+    - date-time
+  - - CourseRatingDTO.properties.whatLearnt.format
+    - int32
+  - - CourseSearchDTO.properties.courseId.format
+    - int64
+  - - CourseSearchDTO.properties.created.format
+    - date-time
+  - - CourseSearchDTO.properties.createdNumberOfDaysAgo.format
+    - int64
+  - - CourseSearchDTO.properties.id.format
+    - int64
+  - - CourseSearchDTO.properties.updated.format
+    - date-time
+  - - CourseTopic.properties.courseTopicId.format
+    - int64
+  - - CourseTopic.properties.created.format
+    - date-time
+  - - CourseTopic.properties.id.format
+    - int64
+  - - CourseTopic.properties.updated.format
+    - date-time
+  - - CourseTopic.properties.views.format
+    - int32
+  - - CourseTopicDTO.properties.courseTopicId.format
+    - int64
+  - - CourseTopicDTO.properties.created.format
+    - date-time
+  - - CourseTopicDTO.properties.createdNumberOfDaysAgo.format
+    - int64
+  - - CourseTopicDTO.properties.id.format
+    - int64
+  - - CourseTopicDTO.properties.updated.format
+    - date-time
+  - - CourseTopicDTO.properties.views.format
+    - int32
+  - - CourseTopicPost.properties.courseTopicPostId.format
+    - int64
+  - - CourseTopicPost.properties.created.format
+    - date-time
+  - - CourseTopicPost.properties.id.format
+    - int64
+  - - CourseTopicPost.properties.updated.format
+    - date-time
+  - - CourseTopicPostDTO.properties.courseTopicPostId.format
+    - int64
+  - - CourseTopicPostDTO.properties.created.format
+    - date-time
+  - - CourseTopicPostDTO.properties.createdNumberOfDaysAgo.format
+    - int64
+  - - CourseTopicPostDTO.properties.id.format
+    - int64
+  - - CourseTopicPostDTO.properties.updated.format
+    - date-time
+  - - Grade.properties.created.format
+    - date-time
+  - - Grade.properties.gradeId.format
+    - int64
+  - - Grade.properties.id.format
+    - int64
+  - - Grade.properties.updated.format
+    - date-time
+  - - Grade.properties.value.format
+    - int32
+  - - GradeDTO.properties.gradeId.format
+    - int64
+  - - GradeDTO.properties.value.format
+    - int32
+  - - Hobby.properties.created.format
+    - date-time
+  - - Hobby.properties.hobbyId.format
+    - int64
+  - - Hobby.properties.id.format
+    - int64
+  - - Hobby.properties.updated.format
+    - date-time
+  - - HobbyDTO.properties.created.format
+    - date-time
+  - - HobbyDTO.properties.createdNumberOfDaysAgo.format
+    - int64
+  - - HobbyDTO.properties.hobbyId.format
+    - int64
+  - - HobbyDTO.properties.id.format
+    - int64
+  - - HobbyDTO.properties.updated.format
+    - date-time
+  - - Image.properties.created.format
+    - date-time
+  - - Image.properties.id.format
+    - int64
+  - - Image.properties.large.format
+    - byte
+  - - Image.properties.medium.format
+    - byte
+  - - Image.properties.small.format
+    - byte
+  - - Image.properties.thumbnail.format
+    - byte
+  - - Image.properties.updated.format
+    - date-time
+  - - ImageDTO.properties.created.format
+    - date-time
+  - - ImageDTO.properties.createdNumberOfDaysAgo.format
+    - int64
+  - - ImageDTO.properties.id.format
+    - int64
+  - - ImageDTO.properties.imageId.format
+    - int64
+  - - ImageDTO.properties.updated.format
+    - date-time
+  - - Industry.properties.created.format
+    - date-time
+  - - Industry.properties.id.format
+    - int64
+  - - Industry.properties.industryId.format
+    - int64
+  - - Industry.properties.updated.format
+    - date-time
+  - - IndustryDTO.properties.created.format
+    - date-time
+  - - IndustryDTO.properties.createdNumberOfDaysAgo.format
+    - int64
+  - - IndustryDTO.properties.id.format
+    - int64
+  - - IndustryDTO.properties.industryId.format
+    - int64
+  - - IndustryDTO.properties.updated.format
+    - date-time
+  - - Inspiration.properties.created.format
+    - date-time
+  - - Inspiration.properties.id.format
+    - int64
+  - - Inspiration.properties.inspirationId.format
+    - int64
+  - - Inspiration.properties.updated.format
+    - date-time
+  - - InspirationCollection.properties.created.format
+    - date-time
+  - - InspirationCollection.properties.id.format
+    - int64
+  - - InspirationCollection.properties.inspirationCollectionId.format
+    - int64
+  - - InspirationCollection.properties.updated.format
+    - date-time
+  - - InspirationCollectionDTO.properties.created.format
+    - date-time
+  - - InspirationCollectionDTO.properties.createdNumberOfDaysAgo.format
+    - int64
+  - - InspirationCollectionDTO.properties.id.format
+    - int64
+  - - InspirationCollectionDTO.properties.inspirationCollectionId.format
+    - int64
+  - - InspirationCollectionDTO.properties.updated.format
+    - date-time
+  - - InspirationDTO.properties.created.format
+    - date-time
+  - - InspirationDTO.properties.createdNumberOfDaysAgo.format
+    - int64
+  - - InspirationDTO.properties.id.format
+    - int64
+  - - InspirationDTO.properties.inspirationId.format
+    - int64
+  - - InspirationDTO.properties.updated.format
+    - date-time
+  - - Institution.properties.created.format
+    - date-time
+  - - Institution.properties.id.format
+    - int64
+  - - Institution.properties.institutionId.format
+    - int64
+  - - Institution.properties.institution_id.format
+    - int64
+  - - Institution.properties.updated.format
+    - date-time
+  - - InstitutionDTO.properties.averageScore.format
+    - double
+  - - InstitutionDTO.properties.created.format
+    - date-time
+  - - InstitutionDTO.properties.createdNumberOfDaysAgo.format
+    - int64
+  - - InstitutionDTO.properties.id.format
+    - int64
+  - - InstitutionDTO.properties.institutionId.format
+    - int64
+  - - InstitutionDTO.properties.updated.format
+    - date-time
+  - - InstitutionSearchDTO.properties.created.format
+    - date-time
+  - - InstitutionSearchDTO.properties.createdNumberOfDaysAgo.format
+    - int64
+  - - InstitutionSearchDTO.properties.id.format
+    - int64
+  - - InstitutionSearchDTO.properties.institutionId.format
+    - int64
+  - - InstitutionSearchDTO.properties.updated.format
+    - date-time
+  - - InstitutionTopic.properties.created.format
+    - date-time
+  - - InstitutionTopic.properties.id.format
+    - int64
+  - - InstitutionTopic.properties.institutionTopicId.format
+    - int64
+  - - InstitutionTopic.properties.updated.format
+    - date-time
+  - - InstitutionTopic.properties.views.format
+    - int32
+  - - InstitutionTopicDTO.properties.created.format
+    - date-time
+  - - InstitutionTopicDTO.properties.createdNumberOfDaysAgo.format
+    - int64
+  - - InstitutionTopicDTO.properties.id.format
+    - int64
+  - - InstitutionTopicDTO.properties.institutionTopicId.format
+    - int64
+  - - InstitutionTopicDTO.properties.updated.format
+    - date-time
+  - - InstitutionTopicDTO.properties.views.format
+    - int32
+  - - InstitutionTopicPost.properties.created.format
+    - date-time
+  - - InstitutionTopicPost.properties.id.format
+    - int64
+  - - InstitutionTopicPost.properties.institutionTopicPostId.format
+    - int64
+  - - InstitutionTopicPost.properties.updated.format
+    - date-time
+  - - InstitutionTopicPostDTO.properties.created.format
+    - date-time
+  - - InstitutionTopicPostDTO.properties.createdNumberOfDaysAgo.format
+    - int64
+  - - InstitutionTopicPostDTO.properties.id.format
+    - int64
+  - - InstitutionTopicPostDTO.properties.institutionTopicPostId.format
+    - int64
+  - - InstitutionTopicPostDTO.properties.updated.format
+    - date-time
+  - - Keyword.properties.created.format
+    - date-time
+  - - Keyword.properties.id.format
+    - int64
+  - - Keyword.properties.keywordId.format
+    - int64
+  - - Keyword.properties.updated.format
+    - date-time
+  - - KeywordDTO.properties.created.format
+    - date-time
+  - - KeywordDTO.properties.createdNumberOfDaysAgo.format
+    - int64
+  - - KeywordDTO.properties.id.format
+    - int64
+  - - KeywordDTO.properties.keywordId.format
+    - int64
+  - - KeywordDTO.properties.updated.format
+    - date-time
+  - - Likes.properties.created.format
+    - date-time
+  - - Likes.properties.entityId.format
+    - int64
+  - - Likes.properties.id.format
+    - int64
+  - - Likes.properties.likeId.format
+    - int64
+  - - Likes.properties.updated.format
+    - date-time
+  - - Metadata.properties.created.format
+    - date-time
+  - - Metadata.properties.id.format
+    - int64
+  - - Metadata.properties.metadataId.format
+    - int64
+  - - Metadata.properties.updated.format
+    - date-time
+  - - MetadataDTO.properties.created.format
+    - date-time
+  - - MetadataDTO.properties.createdNumberOfDaysAgo.format
+    - int64
+  - - MetadataDTO.properties.id.format
+    - int64
+  - - MetadataDTO.properties.metadataId.format
+    - int64
+  - - MetadataDTO.properties.updated.format
+    - date-time
+  - - MetadataImage.properties.created.format
+    - date-time
+  - - MetadataImage.properties.id.format
+    - int64
+  - - MetadataImage.properties.metadataImageId.format
+    - int64
+  - - MetadataImage.properties.updated.format
+    - date-time
+  - - MetadataSearchDTO.properties.created.format
+    - date-time
+  - - MetadataSearchDTO.properties.createdNumberOfDaysAgo.format
+    - int64
+  - - MetadataSearchDTO.properties.id.format
+    - int64
+  - - MetadataSearchDTO.properties.updated.format
+    - date-time
+  - - Notification.properties.created.format
+    - date-time
+  - - Notification.properties.entityId.format
+    - int64
+  - - Notification.properties.id.format
+    - int64
+  - - Notification.properties.notificationId.format
+    - int64
+  - - Notification.properties.updated.format
+    - date-time
+  - - NotificationDTO.properties.created.format
+    - date-time
+  - - NotificationDTO.properties.createdNumberOfDaysAgo.format
+    - int64
+  - - NotificationDTO.properties.entityId.format
+    - int64
+  - - NotificationDTO.properties.id.format
+    - int64
+  - - NotificationDTO.properties.notificationId.format
+    - int64
+  - - NotificationDTO.properties.updated.format
+    - date-time
+  - - Page«CharacteristicDTO».properties.number.format
+    - int32
+  - - Page«CharacteristicDTO».properties.numberOfElements.format
+    - int32
+  - - Page«CharacteristicDTO».properties.size.format
+    - int32
+  - - Page«CharacteristicDTO».properties.totalElements.format
+    - int64
+  - - Page«CharacteristicDTO».properties.totalPages.format
+    - int32
+  - - Page«CommentDTO».properties.number.format
+    - int32
+  - - Page«CommentDTO».properties.numberOfElements.format
+    - int32
+  - - Page«CommentDTO».properties.size.format
+    - int32
+  - - Page«CommentDTO».properties.totalElements.format
+    - int64
+  - - Page«CommentDTO».properties.totalPages.format
+    - int32
+  - - Page«CompanyDTO».properties.number.format
+    - int32
+  - - Page«CompanyDTO».properties.numberOfElements.format
+    - int32
+  - - Page«CompanyDTO».properties.size.format
+    - int32
+  - - Page«CompanyDTO».properties.totalElements.format
+    - int64
+  - - Page«CompanyDTO».properties.totalPages.format
+    - int32
+  - - Page«CompanyPostDTO».properties.number.format
+    - int32
+  - - Page«CompanyPostDTO».properties.numberOfElements.format
+    - int32
+  - - Page«CompanyPostDTO».properties.size.format
+    - int32
+  - - Page«CompanyPostDTO».properties.totalElements.format
+    - int64
+  - - Page«CompanyPostDTO».properties.totalPages.format
+    - int32
+  - - Page«CountyDTO».properties.number.format
+    - int32
+  - - Page«CountyDTO».properties.numberOfElements.format
+    - int32
+  - - Page«CountyDTO».properties.size.format
+    - int32
+  - - Page«CountyDTO».properties.totalElements.format
+    - int64
+  - - Page«CountyDTO».properties.totalPages.format
+    - int32
+  - - Page«CourseDTO».properties.number.format
+    - int32
+  - - Page«CourseDTO».properties.numberOfElements.format
+    - int32
+  - - Page«CourseDTO».properties.size.format
+    - int32
+  - - Page«CourseDTO».properties.totalElements.format
+    - int64
+  - - Page«CourseDTO».properties.totalPages.format
+    - int32
+  - - Page«CourseTopicDTO».properties.number.format
+    - int32
+  - - Page«CourseTopicDTO».properties.numberOfElements.format
+    - int32
+  - - Page«CourseTopicDTO».properties.size.format
+    - int32
+  - - Page«CourseTopicDTO».properties.totalElements.format
+    - int64
+  - - Page«CourseTopicDTO».properties.totalPages.format
+    - int32
+  - - Page«HobbyDTO».properties.number.format
+    - int32
+  - - Page«HobbyDTO».properties.numberOfElements.format
+    - int32
+  - - Page«HobbyDTO».properties.size.format
+    - int32
+  - - Page«HobbyDTO».properties.totalElements.format
+    - int64
+  - - Page«HobbyDTO».properties.totalPages.format
+    - int32
+  - - Page«IndustryDTO».properties.number.format
+    - int32
+  - - Page«IndustryDTO».properties.numberOfElements.format
+    - int32
+  - - Page«IndustryDTO».properties.size.format
+    - int32
+  - - Page«IndustryDTO».properties.totalElements.format
+    - int64
+  - - Page«IndustryDTO».properties.totalPages.format
+    - int32
+  - - Page«InstitutionDTO».properties.number.format
+    - int32
+  - - Page«InstitutionDTO».properties.numberOfElements.format
+    - int32
+  - - Page«InstitutionDTO».properties.size.format
+    - int32
+  - - Page«InstitutionDTO».properties.totalElements.format
+    - int64
+  - - Page«InstitutionDTO».properties.totalPages.format
+    - int32
+  - - Page«MetadataDTO».properties.number.format
+    - int32
+  - - Page«MetadataDTO».properties.numberOfElements.format
+    - int32
+  - - Page«MetadataDTO».properties.size.format
+    - int32
+  - - Page«MetadataDTO».properties.totalElements.format
+    - int64
+  - - Page«MetadataDTO».properties.totalPages.format
+    - int32
+  - - Page«RequestLogDTO».properties.number.format
+    - int32
+  - - Page«RequestLogDTO».properties.numberOfElements.format
+    - int32
+  - - Page«RequestLogDTO».properties.size.format
+    - int32
+  - - Page«RequestLogDTO».properties.totalElements.format
+    - int64
+  - - Page«RequestLogDTO».properties.totalPages.format
+    - int32
+  - - Page«StudentDTO».properties.number.format
+    - int32
+  - - Page«StudentDTO».properties.numberOfElements.format
+    - int32
+  - - Page«StudentDTO».properties.size.format
+    - int32
+  - - Page«StudentDTO».properties.totalElements.format
+    - int64
+  - - Page«StudentDTO».properties.totalPages.format
+    - int32
+  - - Page«SubjectDTO».properties.number.format
+    - int32
+  - - Page«SubjectDTO».properties.numberOfElements.format
+    - int32
+  - - Page«SubjectDTO».properties.size.format
+    - int32
+  - - Page«SubjectDTO».properties.totalElements.format
+    - int64
+  - - Page«SubjectDTO».properties.totalPages.format
+    - int32
+  - - Rating.properties.averageScore.format
+    - float
+  - - Rating.properties.countRatings.format
+    - int32
+  - - Rating.properties.created.format
+    - date-time
+  - - Rating.properties.id.format
+    - int64
+  - - Rating.properties.ratingId.format
+    - int64
+  - - Rating.properties.totalScore.format
+    - int32
+  - - Rating.properties.updated.format
+    - date-time
+  - - RatingDTO.properties.averageScore.format
+    - float
+  - - RatingDTO.properties.countRatings.format
+    - int32
+  - - RatingDTO.properties.created.format
+    - date-time
+  - - RatingDTO.properties.createdNumberOfDaysAgo.format
+    - int64
+  - - RatingDTO.properties.id.format
+    - int64
+  - - RatingDTO.properties.ratingId.format
+    - int64
+  - - RatingDTO.properties.totalScore.format
+    - int32
+  - - RatingDTO.properties.updated.format
+    - date-time
+  - - RequestDataDTO.properties.requestDataId.format
+    - int64
+  - - RequestLogDTO.properties.created.format
+    - date-time
+  - - RequestLogDTO.properties.createdNumberOfDaysAgo.format
+    - int64
+  - - RequestLogDTO.properties.duration.format
+    - double
+  - - RequestLogDTO.properties.id.format
+    - int64
+  - - RequestLogDTO.properties.requestLogId.format
+    - int64
+  - - RequestLogDTO.properties.requestStartedDate.format
+    - date-time
+  - - RequestLogDTO.properties.updated.format
+    - date-time
+  - - ResponseDataDTO.properties.responseDataId.format
+    - int64
+  - - Student.properties.birthDate.format
+    - date-time
+  - - Student.properties.created.format
+    - date-time
+  - - Student.properties.id.format
+    - int64
+  - - Student.properties.studentId.format
+    - int64
+  - - Student.properties.updated.format
+    - date-time
+  - - StudentCourse.properties.studentCourseId.format
+    - int64
+  - - StudentCourseDTO.properties.studentCourseId.format
+    - int64
+  - - StudentDTO.properties.age.format
+    - int32
+  - - StudentDTO.properties.birthDate.format
+    - date-time
+  - - StudentDTO.properties.created.format
+    - date-time
+  - - StudentDTO.properties.createdNumberOfDaysAgo.format
+    - int64
+  - - StudentDTO.properties.id.format
+    - int64
+  - - StudentDTO.properties.numberOfBuddies.format
+    - int32
+  - - StudentDTO.properties.numberOfCourses.format
+    - int32
+  - - StudentDTO.properties.studentId.format
+    - int64
+  - - StudentDTO.properties.unreadMessages.format
+    - int64
+  - - StudentDTO.properties.unreadNotifications.format
+    - int64
+  - - StudentDTO.properties.updated.format
+    - date-time
+  - - StudentFeed.properties.created.format
+    - date-time
+  - - StudentFeed.properties.id.format
+    - int64
+  - - StudentFeed.properties.studentFeedId.format
+    - int64
+  - - StudentFeed.properties.updated.format
+    - date-time
+  - - StudentFeedPost.properties.boost.format
+    - int64
+  - - StudentFeedPost.properties.created.format
+    - date-time
+  - - StudentFeedPost.properties.feedPostId.format
+    - int64
+  - - StudentFeedPost.properties.id.format
+    - int64
+  - - StudentFeedPost.properties.updated.format
+    - date-time
+  - - StudentRating.properties.created.format
+    - date-time
+  - - StudentRating.properties.id.format
+    - int64
+  - - StudentRating.properties.score.format
+    - int32
+  - - StudentRating.properties.studentRatingId.format
+    - int64
+  - - StudentRating.properties.updated.format
+    - date-time
+  - - StudentSearchDTO.properties.created.format
+    - date-time
+  - - StudentSearchDTO.properties.createdNumberOfDaysAgo.format
+    - int64
+  - - StudentSearchDTO.properties.id.format
+    - int64
+  - - StudentSearchDTO.properties.studentId.format
+    - int64
+  - - StudentSearchDTO.properties.updated.format
+    - date-time
+  - - Subject.properties.created.format
+    - date-time
+  - - Subject.properties.id.format
+    - int64
+  - - Subject.properties.subjectId.format
+    - int64
+  - - Subject.properties.updated.format
+    - date-time
+  - - SubjectDTO.properties.created.format
+    - date-time
+  - - SubjectDTO.properties.createdNumberOfDaysAgo.format
+    - int64
+  - - SubjectDTO.properties.id.format
+    - int64
+  - - SubjectDTO.properties.subjectId.format
+    - int64
+  - - SubjectDTO.properties.updated.format
+    - date-time
+  - - UserConversation.properties.created.format
+    - date-time
+  - - UserConversation.properties.id.format
+    - int64
+  - - UserConversation.properties.updated.format
+    - date-time
+  - - UserConversation.properties.userConversationId.format
+    - int64
+  - - UserConversationDTO.properties.created.format
+    - date-time
+  - - UserConversationDTO.properties.createdNumberOfDaysAgo.format
+    - int64
+  - - UserConversationDTO.properties.id.format
+    - int64
+  - - UserConversationDTO.properties.updated.format
+    - date-time
+  - - UserConversationDTO.properties.userConversationId.format
+    - int64
+  - - WorkExperience.properties.created.format
+    - date-time
+  - - WorkExperience.properties.id.format
+    - int64
+  - - WorkExperience.properties.updated.format
+    - date-time
+  - - WorkExperience.properties.workExperienceFrom.format
+    - date-time
+  - - WorkExperience.properties.workExperienceId.format
+    - int64
+  - - WorkExperience.properties.workExperienceTo.format
+    - date-time
+  - - WorkExperienceDTO.properties.created.format
+    - date-time
+  - - WorkExperienceDTO.properties.createdNumberOfDaysAgo.format
+    - int64
+  - - WorkExperienceDTO.properties.id.format
+    - int64
+  - - WorkExperienceDTO.properties.updated.format
+    - date-time
+  - - WorkExperienceDTO.properties.workExperienceFrom.format
+    - date-time
+  - - WorkExperienceDTO.properties.workExperienceId.format
+    - int64
+  - - WorkExperienceDTO.properties.workExperienceTo.format
+    - date-time
+information:
+  - - BuddyDTO
+    - field: BuddyDTO.title
+      name: BuddyDTO.type
+      data: object
+  - - Characteristic
+    - field: Characteristic.title
+      name: Characteristic.type
+      data: object
+  - - CharacteristicDTO
+    - field: CharacteristicDTO.title
+      name: CharacteristicDTO.type
+      data: object
+  - - City
+    - field: City.title
+      name: City.type
+      data: object
+  - - CityDTO
+    - field: CityDTO.title
+      name: CityDTO.type
+      data: object
+  - - Comment
+    - field: Comment.title
+      name: Comment.type
+      data: object
+  - - CommentDTO
+    - field: CommentDTO.title
+      name: CommentDTO.type
+      data: object
+  - - CommonDTO
+    - field: CommonDTO.title
+      name: CommonDTO.type
+      data: object
+  - - Company
+    - field: Company.title
+      name: Company.type
+      data: object
+  - - CompanyDTO
+    - field: CompanyDTO.title
+      name: CompanyDTO.type
+      data: object
+  - - CompanyFollower
+    - field: CompanyFollower.title
+      name: CompanyFollower.type
+      data: object
+  - - CompanyPost
+    - field: CompanyPost.title
+      name: CompanyPost.type
+      data: object
+  - - CompanyPostDTO
+    - field: CompanyPostDTO.title
+      name: CompanyPostDTO.type
+      data: object
+  - - CompanySearchDTO
+    - field: CompanySearchDTO.title
+      name: CompanySearchDTO.type
+      data: object
+  - - CompanySize
+    - field: CompanySize.title
+      name: CompanySize.type
+      data: object
+  - - CompanyType
+    - field: CompanyType.title
+      name: CompanyType.type
+      data: object
+  - - Conversation
+    - field: Conversation.title
+      name: Conversation.type
+      data: object
+  - - ConversationDTO
+    - field: ConversationDTO.title
+      name: ConversationDTO.type
+      data: object
+  - - ConversationMessage
+    - field: ConversationMessage.title
+      name: ConversationMessage.type
+      data: object
+  - - ConversationMessageDTO
+    - field: ConversationMessageDTO.title
+      name: ConversationMessageDTO.type
+      data: object
+  - - County
+    - field: County.title
+      name: County.type
+      data: object
+  - - CountyDTO
+    - field: CountyDTO.title
+      name: CountyDTO.type
+      data: object
+  - - Course
+    - field: Course.title
+      name: Course.type
+      data: object
+  - - CourseDTO
+    - field: CourseDTO.title
+      name: CourseDTO.type
+      data: object
+  - - CourseFileUpload
+    - field: CourseFileUpload.title
+      name: CourseFileUpload.type
+      data: object
+  - - CourseFileUploadDTO
+    - field: CourseFileUploadDTO.title
+      name: CourseFileUploadDTO.type
+      data: object
+  - - CourseRating
+    - field: CourseRating.title
+      name: CourseRating.type
+      data: object
+  - - CourseRatingDTO
+    - field: CourseRatingDTO.title
+      name: CourseRatingDTO.type
+      data: object
+  - - CourseSearchDTO
+    - field: CourseSearchDTO.title
+      name: CourseSearchDTO.type
+      data: object
+  - - CourseTopic
+    - field: CourseTopic.title
+      name: CourseTopic.type
+      data: object
+  - - CourseTopicDTO
+    - field: CourseTopicDTO.title
+      name: CourseTopicDTO.type
+      data: object
+  - - CourseTopicPost
+    - field: CourseTopicPost.title
+      name: CourseTopicPost.type
+      data: object
+  - - CourseTopicPostDTO
+    - field: CourseTopicPostDTO.title
+      name: CourseTopicPostDTO.type
+      data: object
+  - - Grade
+    - field: Grade.title
+      name: Grade.type
+      data: object
+  - - GradeDTO
+    - field: GradeDTO.title
+      name: GradeDTO.type
+      data: object
+  - - Hobby
+    - field: Hobby.title
+      name: Hobby.type
+      data: object
+  - - HobbyDTO
+    - field: HobbyDTO.title
+      name: HobbyDTO.type
+      data: object
+  - - Image
+    - field: Image.title
+      name: Image.type
+      data: object
+  - - ImageDTO
+    - field: ImageDTO.title
+      name: ImageDTO.type
+      data: object
+  - - Industry
+    - field: Industry.title
+      name: Industry.type
+      data: object
+  - - IndustryDTO
+    - field: IndustryDTO.title
+      name: IndustryDTO.type
+      data: object
+  - - Inspiration
+    - field: Inspiration.title
+      name: Inspiration.type
+      data: object
+  - - InspirationCollection
+    - field: InspirationCollection.title
+      name: InspirationCollection.type
+      data: object
+  - - InspirationCollectionDTO
+    - field: InspirationCollectionDTO.title
+      name: InspirationCollectionDTO.type
+      data: object
+  - - InspirationDTO
+    - field: InspirationDTO.title
+      name: InspirationDTO.type
+      data: object
+  - - Institution
+    - field: Institution.title
+      name: Institution.type
+      data: object
+  - - InstitutionDTO
+    - field: InstitutionDTO.title
+      name: InstitutionDTO.type
+      data: object
+  - - InstitutionSearchDTO
+    - field: InstitutionSearchDTO.title
+      name: InstitutionSearchDTO.type
+      data: object
+  - - InstitutionTopic
+    - field: InstitutionTopic.title
+      name: InstitutionTopic.type
+      data: object
+  - - InstitutionTopicDTO
+    - field: InstitutionTopicDTO.title
+      name: InstitutionTopicDTO.type
+      data: object
+  - - InstitutionTopicPost
+    - field: InstitutionTopicPost.title
+      name: InstitutionTopicPost.type
+      data: object
+  - - InstitutionTopicPostDTO
+    - field: InstitutionTopicPostDTO.title
+      name: InstitutionTopicPostDTO.type
+      data: object
+  - - Keyword
+    - field: Keyword.title
+      name: Keyword.type
+      data: object
+  - - KeywordDTO
+    - field: KeywordDTO.title
+      name: KeywordDTO.type
+      data: object
+  - - Likes
+    - field: Likes.title
+      name: Likes.type
+      data: object
+  - - Metadata
+    - field: Metadata.title
+      name: Metadata.type
+      data: object
+  - - MetadataDTO
+    - field: MetadataDTO.title
+      name: MetadataDTO.type
+      data: object
+  - - MetadataImage
+    - field: MetadataImage.title
+      name: MetadataImage.type
+      data: object
+  - - MetadataSearchDTO
+    - field: MetadataSearchDTO.title
+      name: MetadataSearchDTO.type
+      data: object
+  - - Notification
+    - field: Notification.title
+      name: Notification.type
+      data: object
+  - - NotificationDTO
+    - field: NotificationDTO.title
+      name: NotificationDTO.type
+      data: object
+  - - Page«CharacteristicDTO»
+    - field: Page«CharacteristicDTO».title
+      name: Page«CharacteristicDTO».type
+      data: object
+  - - Page«CommentDTO»
+    - field: Page«CommentDTO».title
+      name: Page«CommentDTO».type
+      data: object
+  - - Page«CompanyDTO»
+    - field: Page«CompanyDTO».title
+      name: Page«CompanyDTO».type
+      data: object
+  - - Page«CompanyPostDTO»
+    - field: Page«CompanyPostDTO».title
+      name: Page«CompanyPostDTO».type
+      data: object
+  - - Page«CountyDTO»
+    - field: Page«CountyDTO».title
+      name: Page«CountyDTO».type
+      data: object
+  - - Page«CourseDTO»
+    - field: Page«CourseDTO».title
+      name: Page«CourseDTO».type
+      data: object
+  - - Page«CourseTopicDTO»
+    - field: Page«CourseTopicDTO».title
+      name: Page«CourseTopicDTO».type
+      data: object
+  - - Page«HobbyDTO»
+    - field: Page«HobbyDTO».title
+      name: Page«HobbyDTO».type
+      data: object
+  - - Page«IndustryDTO»
+    - field: Page«IndustryDTO».title
+      name: Page«IndustryDTO».type
+      data: object
+  - - Page«InstitutionDTO»
+    - field: Page«InstitutionDTO».title
+      name: Page«InstitutionDTO».type
+      data: object
+  - - Page«MetadataDTO»
+    - field: Page«MetadataDTO».title
+      name: Page«MetadataDTO».type
+      data: object
+  - - Page«RequestLogDTO»
+    - field: Page«RequestLogDTO».title
+      name: Page«RequestLogDTO».type
+      data: object
+  - - Page«StudentDTO»
+    - field: Page«StudentDTO».title
+      name: Page«StudentDTO».type
+      data: object
+  - - Page«SubjectDTO»
+    - field: Page«SubjectDTO».title
+      name: Page«SubjectDTO».type
+      data: object
+  - - Post
+    - field: Post.title
+      name: Post.type
+      data: object
+  - - Rating
+    - field: Rating.title
+      name: Rating.type
+      data: object
+  - - RatingDTO
+    - field: RatingDTO.title
+      name: RatingDTO.type
+      data: object
+  - - RequestDataDTO
+    - field: RequestDataDTO.title
+      name: RequestDataDTO.type
+      data: object
+  - - RequestLogDTO
+    - field: RequestLogDTO.title
+      name: RequestLogDTO.type
+      data: object
+  - - ResponseDataDTO
+    - field: ResponseDataDTO.title
+      name: ResponseDataDTO.type
+      data: object
+  - - Sort
+    - field: Sort.title
+      name: Sort.type
+      data: object
+  - - Student
+    - field: Student.title
+      name: Student.type
+      data: object
+  - - StudentCourse
+    - field: StudentCourse.title
+      name: StudentCourse.type
+      data: object
+  - - StudentCourseDTO
+    - field: StudentCourseDTO.title
+      name: StudentCourseDTO.type
+      data: object
+  - - StudentDTO
+    - field: StudentDTO.title
+      name: StudentDTO.type
+      data: object
+  - - StudentFeed
+    - field: StudentFeed.title
+      name: StudentFeed.type
+      data: object
+  - - StudentFeedPost
+    - field: StudentFeedPost.title
+      name: StudentFeedPost.type
+      data: object
+  - - StudentRating
+    - field: StudentRating.title
+      name: StudentRating.type
+      data: object
+  - - StudentSearchDTO
+    - field: StudentSearchDTO.title
+      name: StudentSearchDTO.type
+      data: object
+  - - Subject
+    - field: Subject.title
+      name: Subject.type
+      data: object
+  - - SubjectDTO
+    - field: SubjectDTO.title
+      name: SubjectDTO.type
+      data: object
+  - - UserConversation
+    - field: UserConversation.title
+      name: UserConversation.type
+      data: object
+  - - UserConversationDTO
+    - field: UserConversationDTO.title
+      name: UserConversationDTO.type
+      data: object
+  - - WorkExperience
+    - field: WorkExperience.title
+      name: WorkExperience.type
+      data: object
+  - - WorkExperienceDTO
+    - field: WorkExperienceDTO.title
+      name: WorkExperienceDTO.type
+      data: object
+  - - Company.properties.employmentTypes
+    - name: Company.properties.employmentTypes.type
+      data: array
+  - - CompanyDTO.properties.companyEmploymentTypes
+    - name: CompanyDTO.properties.companyEmploymentTypes.type
+      data: array
+  - - CompanyDTO.properties.employmentTypes
+    - name: CompanyDTO.properties.employmentTypes.type
+      data: array
+  - - Industry.properties.pictures
+    - name: Industry.properties.pictures.type
+      data: array
+  - - Student.properties.companySizes
+    - name: Student.properties.companySizes.type
+      data: array
+  - - Student.properties.employmentTypes
+    - name: Student.properties.employmentTypes.type
+      data: array
+  - - StudentDTO.properties.companySizes
+    - name: StudentDTO.properties.companySizes.type
+      data: array
+  - - StudentDTO.properties.employmentTypes
+    - name: StudentDTO.properties.employmentTypes.type
+      data: array
+  - - StudentDTO.properties.metadataNames
+    - name: StudentDTO.properties.metadataNames.type
+      data: array
+references:
+  - - BuddyDTO.friend
+    - StudentDTO
+  - - City.county
+    - County
+  - - CityDTO.county
+    - CountyDTO
+  - - Comment.comments.items
+    - Comment
+  - - Comment.likes.items
+    - Likes
+  - - Comment.student
+    - Student
+  - - CommentDTO.likes.items
+    - Likes
+  - - CommentDTO.student
+    - StudentDTO
+  - - Company.companyPosts.items
+    - CompanyPost
+  - - Company.companySize
+    - CompanySize
+  - - Company.companyType
+    - CompanyType
+  - - Company.counties.items
+    - County
+  - - Company.followers.items
+    - CompanyFollower
+  - - Company.industries.items
+    - Industry
+  - - CompanyDTO.companySize
+    - CompanySize
+  - - CompanyDTO.companyType
+    - CompanyType
+  - - CompanyDTO.counties.items
+    - County
+  - - CompanyDTO.industries.items
+    - Industry
+  - - CompanyFollower.company
+    - Company
+  - - CompanyFollower.student
+    - Student
+  - - CompanyPost.comments.items
+    - Comment
+  - - CompanyPost.likes.items
+    - Likes
+  - - CompanyPost.postAuthor
+    - Company
+  - - CompanyPostDTO.likes.items
+    - Likes
+  - - CompanyPostDTO.postAuthor
+    - CompanyDTO
+  - - CompanySearchDTO.companyType
+    - CompanyType
+  - - Conversation.conversationMessages.items
+    - ConversationMessage
+  - - Conversation.studentConversations.items
+    - UserConversation
+  - - ConversationDTO.allUnseenMessages.items
+    - ConversationMessageDTO
+  - - ConversationDTO.allUsers.items
+    - UserConversationDTO
+  - - ConversationDTO.conversationMessages.items
+    - ConversationMessageDTO
+  - - ConversationDTO.latestConversationMessage
+    - ConversationMessageDTO
+  - - ConversationDTO.studentConversations.items
+    - UserConversationDTO
+  - - ConversationMessage.conversation
+    - Conversation
+  - - ConversationMessage.student
+    - Student
+  - - County.cities.items
+    - City
+  - - Course.comments.items
+    - Comment
+  - - Course.courseFileUploads.items
+    - CourseFileUpload
+  - - Course.courseRatings.items
+    - CourseRating
+  - - Course.courseTopics.items
+    - CourseTopic
+  - - Course.institution
+    - Institution
+  - - Course.metadatas.items
+    - Metadata
+  - - Course.ratings.items
+    - Rating
+  - - Course.subjects.items
+    - Subject
+  - - CourseDTO.comments.items
+    - CommentDTO
+  - - CourseDTO.courseFileUploads.items
+    - CourseFileUploadDTO
+  - - CourseDTO.courseRatings.items
+    - CourseRating
+  - - CourseDTO.courseTopics.items
+    - CourseTopicDTO
+  - - CourseDTO.examUploads.items
+    - CourseFileUploadDTO
+  - - CourseDTO.excerciseUploads.items
+    - CourseFileUploadDTO
+  - - CourseDTO.institution
+    - InstitutionSearchDTO
+  - - CourseDTO.metadatas.items
+    - MetadataDTO
+  - - CourseDTO.otherUploads.items
+    - CourseFileUploadDTO
+  - - CourseDTO.ratings.items
+    - RatingDTO
+  - - CourseDTO.subjects.items
+    - SubjectDTO
+  - - CourseFileUpload.course
+    - Course
+  - - CourseFileUpload.student
+    - Student
+  - - CourseFileUploadDTO.student
+    - StudentSearchDTO
+  - - CourseRating.course
+    - Course
+  - - CourseRatingDTO.course
+    - CourseDTO
+  - - CourseRatingDTO.student
+    - StudentSearchDTO
+  - - CourseSearchDTO.institution
+    - InstitutionDTO
+  - - CourseTopic.course
+    - Course
+  - - CourseTopic.courseTopicPosts.items
+    - CourseTopicPost
+  - - CourseTopic.student
+    - Student
+  - - CourseTopicDTO.course
+    - CourseSearchDTO
+  - - CourseTopicDTO.courseTopicPosts.items
+    - CourseTopicPostDTO
+  - - CourseTopicDTO.student
+    - StudentSearchDTO
+  - - CourseTopicPost.courseTopic
+    - CourseTopic
+  - - CourseTopicPost.downVoters.items
+    - Student
+  - - CourseTopicPost.student
+    - Student
+  - - CourseTopicPost.upVoters.items
+    - Student
+  - - CourseTopicPostDTO.downVoters.items
+    - StudentDTO
+  - - CourseTopicPostDTO.student
+    - StudentDTO
+  - - CourseTopicPostDTO.upVoters.items
+    - StudentDTO
+  - - Hobby.metadatas.items
+    - Metadata
+  - - Hobby.students.items
+    - Student
+  - - Industry.belongsTo
+    - Industry
+  - - Industry.children.items
+    - Industry
+  - - IndustryDTO.belongsTo
+    - IndustryDTO
+  - - IndustryDTO.children.items
+    - IndustryDTO
+  - - Inspiration.image
+    - Image
+  - - InspirationCollection.hobby
+    - Hobby
+  - - InspirationCollection.inspirations.items
+    - Inspiration
+  - - InspirationCollectionDTO.hobby
+    - HobbyDTO
+  - - InspirationCollectionDTO.inspirations.items
+    - InspirationDTO
+  - - InspirationDTO.image
+    - ImageDTO
+  - - Institution.institutionTopics.items
+    - InstitutionTopic
+  - - Institution.ratings.items
+    - Rating
+  - - InstitutionDTO.institutionTopics.items
+    - InstitutionTopicDTO
+  - - InstitutionDTO.ratings.items
+    - RatingDTO
+  - - InstitutionTopic.institution
+    - Institution
+  - - InstitutionTopic.institutionTopicPosts.items
+    - InstitutionTopicPost
+  - - InstitutionTopic.student
+    - Student
+  - - InstitutionTopicDTO.institution
+    - InstitutionSearchDTO
+  - - InstitutionTopicDTO.institutionTopicPosts.items
+    - InstitutionTopicPostDTO
+  - - InstitutionTopicPost.downVoters.items
+    - Student
+  - - InstitutionTopicPost.institutionTopic
+    - InstitutionTopic
+  - - InstitutionTopicPost.student
+    - Student
+  - - InstitutionTopicPost.upVoters.items
+    - Student
+  - - InstitutionTopicPostDTO.downVoters.items
+    - StudentSearchDTO
+  - - InstitutionTopicPostDTO.student
+    - StudentSearchDTO
+  - - InstitutionTopicPostDTO.upVoters.items
+    - StudentSearchDTO
+  - - Keyword.metadata
+    - Metadata
+  - - Likes.student
+    - Student
+  - - Metadata.belongsTo
+    - Metadata
+  - - Metadata.childs.items
+    - Metadata
+  - - Metadata.courses.items
+    - Course
+  - - Metadata.keywords.items
+    - Keyword
+  - - Metadata.metadataImages.items
+    - MetadataImage
+  - - Metadata.subjects.items
+    - Subject
+  - - MetadataDTO.belongsTo
+    - MetadataSearchDTO
+  - - MetadataDTO.childs.items
+    - MetadataSearchDTO
+  - - MetadataDTO.keywords.items
+    - KeywordDTO
+  - - MetadataDTO.metadataImages.items
+    - MetadataImage
+  - - MetadataDTO.subjects.items
+    - SubjectDTO
+  - - MetadataImage.metadata
+    - Metadata
+  - - Notification.initiator
+    - Student
+  - - Notification.student
+    - Student
+  - - NotificationDTO.initiator
+    - StudentSearchDTO
+  - - Page«CharacteristicDTO».content.items
+    - CharacteristicDTO
+  - - Page«CharacteristicDTO».sort
+    - Sort
+  - - Page«CommentDTO».content.items
+    - CommentDTO
+  - - Page«CommentDTO».sort
+    - Sort
+  - - Page«CompanyDTO».content.items
+    - CompanyDTO
+  - - Page«CompanyDTO».sort
+    - Sort
+  - - Page«CompanyPostDTO».content.items
+    - CompanyPostDTO
+  - - Page«CompanyPostDTO».sort
+    - Sort
+  - - Page«CountyDTO».content.items
+    - CountyDTO
+  - - Page«CountyDTO».sort
+    - Sort
+  - - Page«CourseDTO».content.items
+    - CourseDTO
+  - - Page«CourseDTO».sort
+    - Sort
+  - - Page«CourseTopicDTO».content.items
+    - CourseTopicDTO
+  - - Page«CourseTopicDTO».sort
+    - Sort
+  - - Page«HobbyDTO».content.items
+    - HobbyDTO
+  - - Page«HobbyDTO».sort
+    - Sort
+  - - Page«IndustryDTO».content.items
+    - IndustryDTO
+  - - Page«IndustryDTO».sort
+    - Sort
+  - - Page«InstitutionDTO».content.items
+    - InstitutionDTO
+  - - Page«InstitutionDTO».sort
+    - Sort
+  - - Page«MetadataDTO».content.items
+    - MetadataDTO
+  - - Page«MetadataDTO».sort
+    - Sort
+  - - Page«RequestLogDTO».content.items
+    - RequestLogDTO
+  - - Page«RequestLogDTO».sort
+    - Sort
+  - - Page«StudentDTO».content.items
+    - StudentDTO
+  - - Page«StudentDTO».sort
+    - Sort
+  - - Page«SubjectDTO».content.items
+    - SubjectDTO
+  - - Page«SubjectDTO».sort
+    - Sort
+  - - Post.object
+    - CommonDTO
+  - - Post.objects.items
+    - CommonDTO
+  - - Rating.course
+    - Course
+  - - Rating.institution
+    - Institution
+  - - Rating.studentRatings.items
+    - StudentRating
+  - - RequestLogDTO.requestData
+    - RequestDataDTO
+  - - RequestLogDTO.responseData
+    - ResponseDataDTO
+  - - Student.characteristics.items
+    - Characteristic
+  - - Student.conversations.items
+    - UserConversation
+  - - Student.counties.items
+    - County
+  - - Student.courseTopicPosts.items
+    - CourseTopicPost
+  - - Student.courseTopics.items
+    - CourseTopic
+  - - Student.feed
+    - StudentFeed
+  - - Student.inspirationCollections.items
+    - InspirationCollection
+  - - Student.institutionTopicPosts.items
+    - InstitutionTopicPost
+  - - Student.institutionTopics.items
+    - InstitutionTopic
+  - - Student.notifications.items
+    - Notification
+  - - Student.primaryInstitution
+    - Institution
+  - - Student.profilePicture
+    - Image
+  - - Student.studentCourses.items
+    - StudentCourse
+  - - Student.studentHobbies.items
+    - Hobby
+  - - Student.studentIndustries.items
+    - Industry
+  - - Student.studentRatings.items
+    - StudentRating
+  - - Student.studyCity
+    - City
+  - - Student.workExperiences.items
+    - WorkExperience
+  - - StudentCourse.course
+    - Course
+  - - StudentCourse.grade
+    - Grade
+  - - StudentCourse.student
+    - Student
+  - - StudentCourseDTO.course
+    - CourseDTO
+  - - StudentCourseDTO.grade
+    - GradeDTO
+  - - StudentDTO.buddies.items
+    - BuddyDTO
+  - - StudentDTO.characteristics.items
+    - CharacteristicDTO
+  - - StudentDTO.conversations.items
+    - UserConversationDTO
+  - - StudentDTO.counties.items
+    - CountyDTO
+  - - StudentDTO.courseTopicPosts.items
+    - CourseTopicPostDTO
+  - - StudentDTO.courseTopics.items
+    - CourseTopicDTO
+  - - StudentDTO.inspirationCollections.items
+    - InspirationCollectionDTO
+  - - StudentDTO.institutionTopicPosts.items
+    - InstitutionTopicPostDTO
+  - - StudentDTO.institutionTopics.items
+    - InstitutionTopicDTO
+  - - StudentDTO.institutions.items
+    - InstitutionSearchDTO
+  - - StudentDTO.notApprovedBuddiesRequests.items
+    - BuddyDTO
+  - - StudentDTO.notApprovedBuddiesResponses.items
+    - BuddyDTO
+  - - StudentDTO.notifications.items
+    - NotificationDTO
+  - - StudentDTO.primaryInstitution
+    - InstitutionSearchDTO
+  - - StudentDTO.studentCourses.items
+    - StudentCourseDTO
+  - - StudentDTO.studentHobbies.items
+    - HobbyDTO
+  - - StudentDTO.studentIndustries.items
+    - Industry
+  - - StudentDTO.studentRatings.items
+    - StudentRating
+  - - StudentDTO.studyCity
+    - CityDTO
+  - - StudentDTO.workExperiences.items
+    - WorkExperienceDTO
+  - - StudentFeed.feedPosts.items
+    - StudentFeedPost
+  - - StudentFeed.student
+    - Student
+  - - StudentFeedPost.studentFeed
+    - StudentFeed
+  - - StudentRating.rating
+    - Rating
+  - - Subject.metadatas.items
+    - Metadata
+  - - SubjectDTO.metadatas.items
+    - MetadataDTO
+  - - UserConversation.conversation
+    - Conversation
+  - - UserConversation.student
+    - Student
+  - - UserConversationDTO.conversation
+    - ConversationDTO
+  - - UserConversationDTO.student
+    - StudentSearchDTO
+  - - WorkExperience.company
+    - Company
+  - - WorkExperience.metadatas.items
+    - Metadata
+  - - WorkExperience.student
+    - Student
+  - - WorkExperienceDTO.company
+    - Company
+  - - WorkExperienceDTO.metadatas.items
+    - MetadataDTO
+type:
+  date-time: ISODate
+  int64: Int
+  int32: Int
+  float: Float
+  integer: Int
+  number: Int
+  string: String
+  boolean: Boolean
+  byte: ID
+  double: Float

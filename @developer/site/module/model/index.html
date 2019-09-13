@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+	<title>Hitract</title>
+	<style>
+		body {
+			font-family: sf, sans-serif;
+			margin: 10px;
+		}
+	</style>
+	<script defer meta src="https://unpkg.com/bxy@0.1.113/web/modules.js"></script>
+	<script> window.addEventListener('modules', async function on_modules(event){
+
+
+		await print_api()
+	}, false)
+
+
+		//scope actions
+		async function print_api(){
+			const body = window.document.body
+			const content = body.gui.content
+			const {is} = window.modules
+			const templates = new Map(body.all('template').map(template=>[template.id, template]))
+
+			const api = await window.modules.http(URL.join('Api/api.json')).then(({data})=>data)
+			api.host = new URL('https://test.hitract.se/')
+			let data = api.paths
+			for(const set in data){
+				const table = create_component(templates.get('paths'))
+				table.gui.url.href = api.host.at(table.gui.url.innerHTML = set)
+				table.gui.url.onclick = event=>{
+					event.preventDefault()
+					event.currentTarget.aria.pressed = !event.currentTarget.aria.pressed
+				}
+				for(const method in data[set]){
+					const row = create_component(templates.get('method'))
+					row.slot = 'methods'
+					row.insert(`<span slot=method>${method}</span>`).start()
+					for(const field in data[set][method]){
+						let value = data[set][method][field]
+						if(templates.has(field)){
+
+							const fieldset = create_component(templates.get(field))
+							fieldset.slot = field
+							value = is.array(value) ? value:[value]
+							for(const item of value){
+								for(const entry of Object.entries(item)){
+									fieldset.insert(create_html(...entry)).start()
+								}
+							}
+							row.insert(fieldset).end()
+						}
+						else row.insert(create_html(field, value)).end()
+
+					}
+					table.insert(row).end()
+				}
+				content.insert(table).start()
+			}
+
+			function create_component(template){
+				const component = window.modules.element.create('div')
+				component.attachShadow({mode: 'open'}).appendChild(template.content.cloneNode(true))
+				return component
+			}
+
+			function create_html(...entry){
+				return is.data(entry[1]) ? `<pre slot="${entry[0]}">${JSON.stringify(entry[1], null, 2)}</pre>`:`<span slot="${entry[0]}">${entry[1]}</span>`
+			}
+		}
+
+
+
+	</script>
+</head>
+<body>
+<div id="content"></div>
+
+
+<template id="paths">
+	<style>
+        a[aria-pressed=true] + dl{
+            display:block;
+        }
+        dl{
+            display:none;
+        }
+    </style>
+    <a id="url"></a>
+	<dl id="table">
+        <slot name="methods"></slot>
+	</dl>
+</template>
+<template id="method">
+    <dt>
+
+        <strong>method</strong>
+        <slot name="method"></slot>
+    </dt>
+    <dd>
+        <strong>tags</strong>
+        <slot name="tags"></slot>
+    </dd>
+    <dd>
+        <strong>summary</strong>
+        <slot name="summary"></slot>
+    </dd>
+    <dd>
+        <strong>operationId</strong>
+        <slot name="operationId"></slot>
+    </dd>
+
+    <dd>
+        <strong>parameters</strong>
+        <slot name="parameters"></slot>
+    </dd>
+    <dd>
+        <strong>responses</strong>
+        <slot name="responses"></slot>
+    </dd>
+    <dd>
+        <strong>deprecated</strong>
+        <slot name="deprecated"></slot>
+    </dd>
+
+</template>
+<template id="parameters">
+    <style>
+        table{
+            border: 1px solid;
+            table-border-color-dark: aliceblue;
+            border-collapse: separate;
+            table-layout: auto;
+        }
+        td,th{
+            align-items: flex-start;
+            border: 1px solid;
+            text-align: left;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        ::slotted(span){display:block}
+    </style>
+	<table>
+		<thead>
+			<tr>
+				<th>name</th>
+				<th>in</th>
+				<th>required</th>
+				<th>type</th>
+				<th>format</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<slot name="name"></slot>
+				</td>
+				<td>
+					<slot name="in"></slot>
+				</td>
+				<td>
+					<slot name="required"></slot>
+				</td>
+				<td>
+					<slot name="type"></slot>
+				</td>
+				<td>
+					<slot name="format"></slot>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</template>
+
+</body>
+</html>

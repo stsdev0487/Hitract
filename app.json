@@ -1,0 +1,9 @@
+{
+  "context":{
+    "context": "../App",
+    "localization": "sv",
+    "namespace": "HitractGlobal"
+  },
+  "displayName": "Hitract",
+  "name": "Hitract"
+}

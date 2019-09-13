@@ -1,0 +1,1019 @@
+BuddyDTO:
+  buddyId: Int
+  created: String
+  createdAgoString: String
+  createdNumberOfDaysAgo: Int
+  id: Int
+  status: String
+  type: String
+  updated: String
+Characteristic:
+  characteristicId: Int
+  characteristicName: String
+  created: String
+  id: Int
+  updated: String
+CharacteristicDTO:
+  characteristicId: Int
+  characteristicName: String
+  created: String
+  createdAgoString: String
+  createdNumberOfDaysAgo: Int
+  id: Int
+  type: String
+  updated: String
+City:
+  cityId: Int
+  cityName: String
+  created: String
+  id: Int
+  updated: String
+CityDTO:
+  cityId: Int
+  cityName: String
+  created: String
+  createdAgoString: String
+  createdNumberOfDaysAgo: Int
+  id: Int
+  type: String
+  updated: String
+Comment:
+  commentId: Int
+  comments: '[Comment]'
+  content: String
+  created: String
+  entityId: Int
+  entityType: String
+  id: Int
+  likes: '[Likes]'
+  updated: String
+CommentDTO:
+  commentId: Int
+  comments: Int
+  content: String
+  created: String
+  createdAgoString: String
+  createdNumberOfDaysAgo: Int
+  entityId: Int
+  entityType: String
+  id: Int
+  likes: '[Likes]'
+  type: String
+  updated: String
+CommonDTO:
+  created: String
+  createdAgoString: String
+  createdNumberOfDaysAgo: Int
+  id: Int
+  type: String
+  updated: String
+Company:
+  about: String
+  companyId: Int
+  companyName: String
+  companyPosts: '[CompanyPost]'
+  counties: '[County]'
+  created: String
+  employed: String
+  employmentTypes:
+    items: String
+  facebookPage: String
+  followers: '[CompanyFollower]'
+  founded: Int
+  headerPictureUrl: String
+  headquarters: String
+  homepage: String
+  id: Int
+  industries: '[Industry]'
+  pictureUrl: String
+  revenue: String
+  updated: String
+CompanyDTO:
+  about: String
+  companyEmploymentTypes:
+    items: String
+  companyId: Int
+  companyName: String
+  counties: '[County]'
+  created: String
+  createdAgoString: String
+  createdNumberOfDaysAgo: Int
+  employed: String
+  employmentTypes:
+    items: String
+  facebookPage: String
+  founded: Int
+  headerPictureUrl: String
+  homepage: String
+  id: Int
+  industries: '[Industry]'
+  pictureUrl: String
+  revenue: String
+  type: String
+  updated: String
+CompanyFollower:
+  boost: Int
+  created: String
+  followerId: Int
+  id: Int
+  updated: String
+CompanyPost:
+  comments: '[Comment]'
+  companyPostId: Int
+  created: String
+  header: String
+  id: Int
+  likes: '[Likes]'
+  postText: String
+  postType: String
+  resource: String
+  updated: String
+CompanyPostDTO:
+  authorName: String
+  comments: Int
+  companyPostId: Int
+  created: String
+  createdAgoString: String
+  createdNumberOfDaysAgo: Int
+  header: String
+  id: Int
+  likes: '[Likes]'
+  logo: String
+  postText: String
+  postType: String
+  resource: String
+  source: String
+  type: String
+  updated: String
+CompanySearchDTO:
+  companyId: Int
+  companyName: String
+  created: String
+  createdAgoString: String
+  createdNumberOfDaysAgo: Int
+  headerPictureUrl: String
+  id: Int
+  pictureUrl: String
+  type: String
+  updated: String
+CompanySize:
+  companySizeId: Int
+  companySizeName: String
+  companySizeRangeEnd: Int
+  companySizeRangeStart: Int
+  created: String
+  id: Int
+  updated: String
+CompanyType:
+  companyTypeId: Int
+  companyTypeName: String
+  created: String
+  id: Int
+  updated: String
+Conversation:
+  conversationId: Int
+  conversationMessages: '[ConversationMessage]'
+  created: String
+  id: Int
+  studentConversations: '[UserConversation]'
+  updated: String
+ConversationDTO:
+  allUnseenMessages: '[ConversationMessageDTO]'
+  allUsers: '[UserConversationDTO]'
+  conversationId: Int
+  conversationMessages: '[ConversationMessageDTO]'
+  created: String
+  createdAgoString: String
+  createdNumberOfDaysAgo: Int
+  id: Int
+  studentConversations: '[UserConversationDTO]'
+  type: String
+  updated: String
+ConversationMessage:
+  content: String
+  created: String
+  id: Int
+  messageId: Int
+  updated: String
+ConversationMessageDTO:
+  content: String
+  created: String
+  createdAgoString: String
+  createdNumberOfDaysAgo: Int
+  id: Int
+  messageId: Int
+  type: String
+  updated: String
+County:
+  cities: '[City]'
+  countyId: Int
+  countyName: String
+  created: String
+  id: Int
+  updated: String
+CountyDTO:
+  countyId: Int
+  countyName: String
+  created: String
+  createdAgoString: String
+  createdNumberOfDaysAgo: Int
+  id: Int
+  type: String
+  updated: String
+Course:
+  comments: '[Comment]'
+  courseCode: String
+  courseFileUploads: '[CourseFileUpload]'
+  courseId: Int
+  courseRatings: '[CourseRating]'
+  courseTopics: '[CourseTopic]'
+  created: String
+  creditSystem: String
+  credits: Int
+  descriptionEn: String
+  descriptionSv: String
+  educationLevel: String
+  id: Int
+  metadatas: '[Metadata]'
+  ratings: '[Rating]'
+  subjects: '[Subject]'
+  titleEn: String
+  titleSv: String
+  updated: String
+  views: Int
+CourseDTO:
+  averageDifficultyScore: Int
+  averageFunnyScore: Int
+  averageScore: Int
+  averageTeacherScore: Int
+  averageTempoScore: Int
+  averageWhatLearntScore: Int
+  comments: '[CommentDTO]'
+  courseCode: String
+  courseFileUploads: '[CourseFileUploadDTO]'
+  courseId: Int
+  courseRatings: '[CourseRating]'
+  courseTopics: '[CourseTopicDTO]'
+  created: String
+  createdAgoString: String
+  createdNumberOfDaysAgo: Int
+  creditSystem: String
+  credits: Int
+  descriptionEn: String
+  descriptionSv: String
+  educationLevel: String
+  education_level: String
+  examUploads: '[CourseFileUploadDTO]'
+  excerciseUploads: '[CourseFileUploadDTO]'
+  id: Int
+  metadatas: '[MetadataDTO]'
+  otherUploads: '[CourseFileUploadDTO]'
+  randomMetadataImageUrl: String
+  ratings: '[RatingDTO]'
+  subjects: '[SubjectDTO]'
+  titleEn: String
+  titleSv: String
+  type: String
+  updated: String
+  views: Int
+CourseFileUpload:
+  courseFileUploadId: Int
+  created: String
+  file: String
+  filename: String
+  id: Int
+  mimeType: String
+  semester: String
+  size: Int
+  updated: String
+  uploadType: String
+  year: String
+CourseFileUploadDTO:
+  courseFileUploadId: Int
+  created: String
+  createdAgoString: String
+  createdNumberOfDaysAgo: Int
+  filename: String
+  id: Int
+  mimeType: String
+  semester: String
+  size: Int
+  type: String
+  updated: String
+  uploadType: String
+  year: String
+CourseRating:
+  courseRatingId: Int
+  created: String
+  difficulty: Int
+  extraInfo: String
+  funny: Int
+  id: Int
+  teacher: Int
+  tempo: Int
+  updated: String
+  whatLearnt: Int
+CourseRatingDTO:
+  courseRatingId: Int
+  created: String
+  difficulty: Int
+  extraInfo: String
+  funny: Int
+  teacher: Int
+  tempo: Int
+  type: String
+  updated: String
+  whatLearnt: Int
+CourseSearchDTO:
+  courseCode: String
+  courseId: Int
+  created: String
+  createdAgoString: String
+  createdNumberOfDaysAgo: Int
+  id: Int
+  titleEn: String
+  titleSv: String
+  type: String
+  updated: String
+CourseTopic:
+  content: String
+  courseTopicId: Int
+  courseTopicPosts: '[CourseTopicPost]'
+  created: String
+  header: String
+  id: Int
+  updated: String
+  views: Int
+CourseTopicDTO:
+  content: String
+  courseTopicId: Int
+  courseTopicPosts: '[CourseTopicPostDTO]'
+  created: String
+  createdAgoString: String
+  createdNumberOfDaysAgo: Int
+  header: String
+  id: Int
+  type: String
+  updated: String
+  views: Int
+CourseTopicPost:
+  content: String
+  courseTopicPostId: Int
+  created: String
+  downVoters: '[Student]'
+  id: Int
+  upVoters: '[Student]'
+  updated: String
+CourseTopicPostDTO:
+  content: String
+  courseTopicPostId: Int
+  created: String
+  createdAgoString: String
+  createdNumberOfDaysAgo: Int
+  downVoters: '[StudentDTO]'
+  id: Int
+  type: String
+  upVoters: '[StudentDTO]'
+  updated: String
+Grade:
+  created: String
+  grade: String
+  gradeId: Int
+  id: Int
+  updated: String
+  value: Int
+GradeDTO:
+  grade: String
+  gradeId: Int
+  value: Int
+Hobby:
+  created: String
+  description: String
+  hobbyId: Int
+  hobbyName: String
+  id: Int
+  image: String
+  metadatas: '[Metadata]'
+  students: '[Student]'
+  updated: String
+HobbyDTO:
+  created: String
+  createdAgoString: String
+  createdNumberOfDaysAgo: Int
+  description: String
+  hobbyId: Int
+  hobbyName: String
+  id: Int
+  image: String
+  type: String
+  updated: String
+Image:
+  created: String
+  id: Int
+  large: String
+  medium: String
+  small: String
+  thumbnail: String
+  updated: String
+ImageDTO:
+  created: String
+  createdAgoString: String
+  createdNumberOfDaysAgo: Int
+  id: Int
+  imageId: Int
+  type: String
+  updated: String
+Industry:
+  children: '[Industry]'
+  created: String
+  id: Int
+  industryId: Int
+  industryName: String
+  pictures:
+    items: String
+  updated: String
+IndustryDTO:
+  children: '[IndustryDTO]'
+  created: String
+  createdAgoString: String
+  createdNumberOfDaysAgo: Int
+  id: Int
+  industryId: Int
+  industryName: String
+  type: String
+  updated: String
+Inspiration:
+  caption: String
+  created: String
+  fileType: String
+  id: Int
+  inspirationId: Int
+  updated: String
+InspirationCollection:
+  caption: String
+  created: String
+  id: Int
+  inspirationCollectionId: Int
+  inspirations: '[Inspiration]'
+  title: String
+  updated: String
+InspirationCollectionDTO:
+  caption: String
+  created: String
+  createdAgoString: String
+  createdNumberOfDaysAgo: Int
+  id: Int
+  inspirationCollectionId: Int
+  inspirations: '[InspirationDTO]'
+  title: String
+  type: String
+  updated: String
+InspirationDTO:
+  caption: String
+  created: String
+  createdAgoString: String
+  createdNumberOfDaysAgo: Int
+  fileType: String
+  id: Int
+  inspirationId: Int
+  type: String
+  updated: String
+Institution:
+  created: String
+  description: String
+  id: Int
+  institutionCode: String
+  institutionId: Int
+  institutionName: String
+  institutionShortName: String
+  institutionTopics: '[InstitutionTopic]'
+  institutionWikiUrl: String
+  institution_id: Int
+  logo: String
+  pictureDescription: String
+  pictureUrl: String
+  pictureWikiUrl: String
+  ratings: '[Rating]'
+  updated: String
+InstitutionDTO:
+  averageScore: Int
+  created: String
+  createdAgoString: String
+  createdNumberOfDaysAgo: Int
+  description: String
+  id: Int
+  institutionCode: String
+  institutionId: Int
+  institutionName: String
+  institutionShortName: String
+  institutionTopics: '[InstitutionTopicDTO]'
+  institutionWikiUrl: String
+  largeImageUrl: String
+  logo: String
+  mediumImageUrl: String
+  pictureDescription: String
+  pictureUrl: String
+  pictureWikiUrl: String
+  ratings: '[RatingDTO]'
+  smallImageUrl: String
+  type: String
+  updated: String
+InstitutionSearchDTO:
+  created: String
+  createdAgoString: String
+  createdNumberOfDaysAgo: Int
+  id: Int
+  institutionCode: String
+  institutionId: Int
+  institutionName: String
+  institutionShortName: String
+  smallImageUrl: String
+  type: String
+  updated: String
+InstitutionTopic:
+  content: String
+  created: String
+  header: String
+  id: Int
+  institutionTopicId: Int
+  institutionTopicPosts: '[InstitutionTopicPost]'
+  updated: String
+  views: Int
+InstitutionTopicDTO:
+  content: String
+  created: String
+  createdAgoString: String
+  createdNumberOfDaysAgo: Int
+  header: String
+  id: Int
+  institutionTopicId: Int
+  institutionTopicPosts: '[InstitutionTopicPostDTO]'
+  type: String
+  updated: String
+  views: Int
+InstitutionTopicPost:
+  content: String
+  created: String
+  downVoters: '[Student]'
+  id: Int
+  institutionTopicPostId: Int
+  upVoters: '[Student]'
+  updated: String
+InstitutionTopicPostDTO:
+  content: String
+  created: String
+  createdAgoString: String
+  createdNumberOfDaysAgo: Int
+  downVoters: '[StudentSearchDTO]'
+  id: Int
+  institutionTopicPostId: Int
+  type: String
+  upVoters: '[StudentSearchDTO]'
+  updated: String
+Keyword:
+  created: String
+  id: Int
+  keyword: String
+  keywordId: Int
+  updated: String
+KeywordDTO:
+  created: String
+  createdAgoString: String
+  createdNumberOfDaysAgo: Int
+  id: Int
+  keyword: String
+  keywordId: Int
+  type: String
+  updated: String
+Likes:
+  created: String
+  entityId: Int
+  entityType: String
+  id: Int
+  likeId: Int
+  updated: String
+Metadata:
+  childs: '[Metadata]'
+  courses: '[Course]'
+  created: String
+  id: Int
+  keywords: '[Keyword]'
+  metadataId: Int
+  metadataImages: '[MetadataImage]'
+  metadataLevel: String
+  metadataName: String
+  subjects: '[Subject]'
+  updated: String
+MetadataDTO:
+  childs: '[MetadataSearchDTO]'
+  created: String
+  createdAgoString: String
+  createdNumberOfDaysAgo: Int
+  id: Int
+  keywords: '[KeywordDTO]'
+  metadataId: Int
+  metadataImages: '[MetadataImage]'
+  metadataName: String
+  subjects: '[SubjectDTO]'
+  type: String
+  updated: String
+MetadataImage:
+  created: String
+  id: Int
+  imageUrl: String
+  metadataImageId: Int
+  tagline: String
+  updated: String
+  wikilink: String
+  wikilinkDisplayName: String
+MetadataSearchDTO:
+  created: String
+  createdAgoString: String
+  createdNumberOfDaysAgo: Int
+  id: Int
+  type: String
+  updated: String
+Notification:
+  clicked: Boolean
+  created: String
+  entityId: Int
+  entityType: String
+  id: Int
+  information: String
+  notificationId: Int
+  notificationType: String
+  seen: Boolean
+  updated: String
+NotificationDTO:
+  clicked: Boolean
+  created: String
+  createdAgoString: String
+  createdNumberOfDaysAgo: Int
+  entityId: Int
+  entityType: String
+  id: Int
+  information: String
+  notificationId: Int
+  notificationType: String
+  seen: Boolean
+  type: String
+  updated: String
+Page«CharacteristicDTO»:
+  content: '[CharacteristicDTO]'
+  first: Boolean
+  last: Boolean
+  number: Int
+  numberOfElements: Int
+  size: Int
+  totalElements: Int
+  totalPages: Int
+Page«CommentDTO»:
+  content: '[CommentDTO]'
+  first: Boolean
+  last: Boolean
+  number: Int
+  numberOfElements: Int
+  size: Int
+  totalElements: Int
+  totalPages: Int
+Page«CompanyDTO»:
+  content: '[CompanyDTO]'
+  first: Boolean
+  last: Boolean
+  number: Int
+  numberOfElements: Int
+  size: Int
+  totalElements: Int
+  totalPages: Int
+Page«CompanyPostDTO»:
+  content: '[CompanyPostDTO]'
+  first: Boolean
+  last: Boolean
+  number: Int
+  numberOfElements: Int
+  size: Int
+  totalElements: Int
+  totalPages: Int
+Page«CountyDTO»:
+  content: '[CountyDTO]'
+  first: Boolean
+  last: Boolean
+  number: Int
+  numberOfElements: Int
+  size: Int
+  totalElements: Int
+  totalPages: Int
+Page«CourseDTO»:
+  content: '[CourseDTO]'
+  first: Boolean
+  last: Boolean
+  number: Int
+  numberOfElements: Int
+  size: Int
+  totalElements: Int
+  totalPages: Int
+Page«CourseTopicDTO»:
+  content: '[CourseTopicDTO]'
+  first: Boolean
+  last: Boolean
+  number: Int
+  numberOfElements: Int
+  size: Int
+  totalElements: Int
+  totalPages: Int
+Page«HobbyDTO»:
+  content: '[HobbyDTO]'
+  first: Boolean
+  last: Boolean
+  number: Int
+  numberOfElements: Int
+  size: Int
+  totalElements: Int
+  totalPages: Int
+Page«IndustryDTO»:
+  content: '[IndustryDTO]'
+  first: Boolean
+  last: Boolean
+  number: Int
+  numberOfElements: Int
+  size: Int
+  totalElements: Int
+  totalPages: Int
+Page«InstitutionDTO»:
+  content: '[InstitutionDTO]'
+  first: Boolean
+  last: Boolean
+  number: Int
+  numberOfElements: Int
+  size: Int
+  totalElements: Int
+  totalPages: Int
+Page«MetadataDTO»:
+  content: '[MetadataDTO]'
+  first: Boolean
+  last: Boolean
+  number: Int
+  numberOfElements: Int
+  size: Int
+  totalElements: Int
+  totalPages: Int
+Page«RequestLogDTO»:
+  content: '[RequestLogDTO]'
+  first: Boolean
+  last: Boolean
+  number: Int
+  numberOfElements: Int
+  size: Int
+  totalElements: Int
+  totalPages: Int
+Page«StudentDTO»:
+  content: '[StudentDTO]'
+  first: Boolean
+  last: Boolean
+  number: Int
+  numberOfElements: Int
+  size: Int
+  totalElements: Int
+  totalPages: Int
+Page«SubjectDTO»:
+  content: '[SubjectDTO]'
+  first: Boolean
+  last: Boolean
+  number: Int
+  numberOfElements: Int
+  size: Int
+  totalElements: Int
+  totalPages: Int
+Post:
+  feedPostType: String
+  objects: '[CommonDTO]'
+Rating:
+  averageScore: Int
+  countRatings: Int
+  created: String
+  id: Int
+  ratingId: Int
+  ratingType: String
+  studentRatings: '[StudentRating]'
+  totalScore: Int
+  updated: String
+RatingDTO:
+  averageScore: Int
+  countRatings: Int
+  created: String
+  createdAgoString: String
+  createdNumberOfDaysAgo: Int
+  id: Int
+  ratingId: Int
+  ratingType: String
+  totalScore: Int
+  type: String
+  updated: String
+RequestDataDTO:
+  requestDataId: Int
+  requestPaylod: String
+RequestLogDTO:
+  created: String
+  createdAgoString: String
+  createdNumberOfDaysAgo: Int
+  duration: Int
+  httpResponseCode: String
+  id: Int
+  method: String
+  requestLogId: Int
+  requestStartedDate: String
+  type: String
+  updated: String
+  uri: String
+  username: String
+ResponseDataDTO:
+  responseDataId: Int
+  responsePayload: String
+Student:
+  aboutMe: String
+  birthDate: String
+  birthDateFormatted: String
+  characteristics: '[Characteristic]'
+  companySizes:
+    items: String
+  conversations: '[UserConversation]'
+  counties: '[County]'
+  courseTopicPosts: '[CourseTopicPost]'
+  courseTopics: '[CourseTopic]'
+  created: String
+  email: String
+  employmentTypes:
+    items: String
+  firstName: String
+  hasSetAboutMe: Boolean
+  id: Int
+  identifier: String
+  inspirationCollections: '[InspirationCollection]'
+  institutionTopicPosts: '[InstitutionTopicPost]'
+  institutionTopics: '[InstitutionTopic]'
+  lastName: String
+  notifications: '[Notification]'
+  personalNumber: String
+  provider: String
+  role: String
+  sex: String
+  studentCourses: '[StudentCourse]'
+  studentHobbies: '[Hobby]'
+  studentId: Int
+  studentIndustries: '[Industry]'
+  studentRatings: '[StudentRating]'
+  updated: String
+  userStatus: String
+  verified: Boolean
+  workExperiences: '[WorkExperience]'
+StudentCourse:
+  important: Boolean
+  studentCourseId: Int
+  visible: Boolean
+StudentCourseDTO:
+  important: Boolean
+  studentCourseId: Int
+  visible: Boolean
+StudentDTO:
+  aboutMe: String
+  age: Int
+  birthDate: String
+  birthDateFormatted: String
+  buddies: '[BuddyDTO]'
+  characteristics: '[CharacteristicDTO]'
+  companySizes:
+    items: String
+  conversations: '[UserConversationDTO]'
+  counties: '[CountyDTO]'
+  courseTopicPosts: '[CourseTopicPostDTO]'
+  courseTopics: '[CourseTopicDTO]'
+  created: String
+  createdAgoString: String
+  createdNumberOfDaysAgo: Int
+  email: String
+  employmentTypes:
+    items: String
+  firstName: String
+  fullName: String
+  hasSetAboutMe: Boolean
+  id: Int
+  inspirationCollections: '[InspirationCollectionDTO]'
+  institutionTopicPosts: '[InstitutionTopicPostDTO]'
+  institutionTopics: '[InstitutionTopicDTO]'
+  institutions: '[InstitutionSearchDTO]'
+  lastName: String
+  metadataNames:
+    items: String
+  notApprovedBuddiesRequests: '[BuddyDTO]'
+  notApprovedBuddiesResponses: '[BuddyDTO]'
+  notifications: '[NotificationDTO]'
+  numberOfBuddies: Int
+  numberOfCourses: Int
+  officialId: String
+  personalNumber: String
+  pictureUrl: String
+  role: String
+  sex: String
+  studentCourses: '[StudentCourseDTO]'
+  studentHobbies: '[HobbyDTO]'
+  studentId: Int
+  studentIndustries: '[Industry]'
+  studentRatings: '[StudentRating]'
+  type: String
+  unreadMessages: Int
+  unreadNotifications: Int
+  updated: String
+  userStatus: String
+  verified: Boolean
+  workExperiences: '[WorkExperienceDTO]'
+StudentFeed:
+  created: String
+  feedPosts: '[StudentFeedPost]'
+  id: Int
+  studentFeedId: Int
+  updated: String
+StudentFeedPost:
+  boost: Int
+  created: String
+  feedPostId: Int
+  id: Int
+  updated: String
+StudentRating:
+  created: String
+  id: Int
+  score: Int
+  studentRatingId: Int
+  updated: String
+StudentSearchDTO:
+  created: String
+  createdAgoString: String
+  createdNumberOfDaysAgo: Int
+  firstName: String
+  fullName: String
+  id: Int
+  lastName: String
+  pictureUrl: String
+  studentId: Int
+  type: String
+  updated: String
+Subject:
+  created: String
+  description: String
+  id: Int
+  metadatas: '[Metadata]'
+  subjectCode: String
+  subjectId: Int
+  updated: String
+SubjectDTO:
+  created: String
+  createdAgoString: String
+  createdNumberOfDaysAgo: Int
+  description: String
+  id: Int
+  metadatas: '[MetadataDTO]'
+  subjectCode: String
+  subjectId: Int
+  type: String
+  updated: String
+UserConversation:
+  created: String
+  id: Int
+  seen: Boolean
+  updated: String
+  userConversationId: Int
+UserConversationDTO:
+  created: String
+  createdAgoString: String
+  createdNumberOfDaysAgo: Int
+  id: Int
+  seen: Boolean
+  type: String
+  updated: String
+  userConversationId: Int
+WorkExperience:
+  created: String
+  id: Int
+  metadatas: '[Metadata]'
+  onGoing: Boolean
+  updated: String
+  workExperienceCompany: String
+  workExperienceFrom: String
+  workExperienceFromFormatted: String
+  workExperienceId: Int
+  workExperienceRole: String
+  workExperienceTo: String
+  workExperienceToFormatted: String
+WorkExperienceDTO:
+  created: String
+  createdAgoString: String
+  createdNumberOfDaysAgo: Int
+  id: Int
+  metadatas: '[MetadataDTO]'
+  onGoing: Boolean
+  type: String
+  updated: String
+  workExperienceCompany: String
+  workExperienceFrom: String
+  workExperienceId: Int
+  workExperienceRole: String
+  workExperienceTo: String

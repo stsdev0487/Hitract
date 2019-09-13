@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "fxy": "^0.2.7"
+  },
+  "name": "@package-scripts/tool",
+  "private": true
+}

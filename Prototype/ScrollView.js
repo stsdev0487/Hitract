@@ -1,0 +1,59 @@
+import {prototype, read} from './Prototype';
+export const Properties = read(`
+	alwaysBounceHorizontal
+	alwaysBounceVertical
+	automaticallyAdjustContentInsets
+	bounces
+	bouncesZoom
+	canCancelContentTouches
+	centerContent
+	contentContainerStyle
+	contentInset
+	contentInsetAdjustmentBehavior
+	contentOffset
+	decelerationRate
+	directionalLockEnabled
+	disableIntervalMomentum
+	disableScrollViewPanResponder
+	endFillColor
+	horizontal
+	indicatorStyle
+	invertStickyHeaders
+	keyboardDismissMode
+	keyboardShouldPersistTaps
+	maintainVisibleContentPosition
+	maximumZoomScale
+	minimumZoomScale
+	nestedScrollEnabled
+	onContentSizeChange
+	onMomentumScrollBegin
+	onMomentumScrollEnd
+	onScroll
+	onScrollBeginDrag
+	onScrollEndDrag
+	onScrollToTop
+	overScrollMode
+	pagingEnabled
+	persistentScrollbar
+	pinchGestureEnabled
+	refreshControl
+	removeClippedSubviews
+	scrollBarThumbImage
+	scrollEnabled
+	scrollEventThrottle
+	scrollIndicatorInsets
+	scrollPerfTag
+	scrollToOverflowEnabled
+	scrollsToTop
+	showsHorizontalScrollIndicator
+	showsVerticalScrollIndicator
+	snapToAlignment
+	snapToEnd
+	snapToInterval
+	snapToOffsets
+	snapToStart
+	stickyHeaderIndices
+	zoomScale`)
+
+
+export default prototype({Properties});

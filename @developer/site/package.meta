@@ -1,0 +1,27 @@
+#Developer tools
+name: Hitract
+
+#Map of absolute url locators assigned & accessible via `modules.url()`
+project:
+  host: localhost
+  main:
+    assets:
+      - module/search-form.js
+      - module/react-native/index.js
+      - index.js
+  port: &port 4321
+  protocol: http
+  search:
+    endpoint:
+      pathname: search
+      structure:
+        keywords: ''
+        types: ''
+    port: *port
+    targets:
+     #- extra folders project
+  locations:
+    module:
+      folder: module
+
+version: 0.1

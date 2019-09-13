@@ -1,0 +1,189 @@
+export default [{
+		"created": "2019-07-22 22:13:27",
+		"updated": "2019-07-22 22:13:27",
+		"type": "InspirationCollectionDTO",
+		"inspirationCollectionId": 155,
+		"hobby": {
+			"created": "2018-05-28 22:37:57",
+			"updated": "2018-05-28 22:37:57",
+			"type": "HobbyDTO",
+			"hobbyId": 3,
+			"hobbyName": "Media, Sociala medier & Bloggar",
+			"description": "Public service till Snap och kändisbloggar",
+			"image": "/resources/images/hitHobbies/hithobbies_1.jpg",
+			"id": 3,
+			"createdNumberOfDaysAgo": 431,
+			"createdAgoString": "2må sedan"
+		},
+		"inspirations": [
+			{
+				"created": "2019-07-22 22:14:08",
+				"updated": "2019-07-22 22:14:08",
+				"type": "InspirationDTO",
+				"inspirationId": 307,
+				"image": {
+					"created": "2019-07-22 22:14:08",
+					"updated": "2019-07-22 22:14:08",
+					"type": "ImageDTO",
+					"imageId": 15192,
+					"thumbnail": "https://storage.hitract.se/TEST/images/686d43d0-c1bf-4fe4-ad90-e550cc57d843.jpg",
+					"small": "https://storage.hitract.se/TEST/images/61d1c500-3baa-407c-b50e-aa60549f0b6b.jpg",
+					"medium": "https://storage.hitract.se/TEST/images/5370a49a-e48e-4eec-97c5-d2846341e061.jpg",
+					"large": "https://storage.hitract.se/TEST/images/1be85f02-9f33-4beb-a475-0e506bb4e43c.jpg",
+					"id": 15192,
+					"createdNumberOfDaysAgo": 11,
+					"createdAgoString": "1v sedan"
+				},
+				"fileType": "status",
+				"student": null,
+				"caption": "Fett!",
+				"comments": 0,
+				"likes": [],
+				"id": 307,
+				"createdNumberOfDaysAgo": 11,
+				"createdAgoString": "1v sedan"
+			},
+			{
+				"created": "2019-08-01 14:32:50",
+				"updated": "2019-08-01 14:32:50",
+				"type": "InspirationDTO",
+				"inspirationId": 397,
+				"image": {
+					"created": "2019-08-01 14:32:50",
+					"updated": "2019-08-01 14:32:50",
+					"type": "ImageDTO",
+					"imageId": 15681,
+					"thumbnail": "https://storage.hitract.se/TEST/images/23eb4216-d64a-4ab0-bcf2-789efdf36caf.jpg",
+					"small": "https://storage.hitract.se/TEST/images/fcdbcb0a-c948-4503-834e-add6d6191185.jpg",
+					"medium": "https://storage.hitract.se/TEST/images/1f729e7d-9b04-4772-a268-e942cda6868a.jpg",
+					"large": "https://storage.hitract.se/TEST/images/c6dc1960-452b-4740-b201-ff6607344a1d.jpg",
+					"id": 15681,
+					"createdNumberOfDaysAgo": 1,
+					"createdAgoString": "1d sedan"
+				},
+				"fileType": "status",
+				"student": null,
+				"caption": "En ny bild!",
+				"comments": 0,
+				"likes": [],
+				"id": 397,
+				"createdNumberOfDaysAgo": 1,
+				"createdAgoString": "1d sedan"
+			},
+			{
+				"created": "2019-08-01 15:12:15",
+				"updated": "2019-08-01 15:12:15",
+				"type": "InspirationDTO",
+				"inspirationId": 403,
+				"image": {
+					"created": "2019-08-01 15:12:15",
+					"updated": "2019-08-01 15:12:15",
+					"type": "ImageDTO",
+					"imageId": 15686,
+					"thumbnail": "https://storage.hitract.se/TEST/images/facfdab6-1e73-4fcd-8e0d-e83e30484508.jpg",
+					"small": "https://storage.hitract.se/TEST/images/cca846dc-8785-400d-aaac-37bd117e5250.jpg",
+					"medium": "https://storage.hitract.se/TEST/images/4606c8fd-96e5-4cb2-8882-621fd7f2492f.jpg",
+					"large": "https://storage.hitract.se/TEST/images/051836c3-8154-4ad9-a4d4-09192d7b0e41.jpg",
+					"id": 15686,
+					"createdNumberOfDaysAgo": 1,
+					"createdAgoString": "1d sedan"
+				},
+				"fileType": "status",
+				"student": {
+					"created": "2019-07-16 13:46:26",
+					"updated": "2019-07-26 15:55:12",
+					"type": "StudentSearchDTO",
+					"studentId": 62,
+					"firstName": "Robert",
+					"lastName": "Nordström",
+					"pictureUrl": "https://storage.hitract.se/TEST/images/b74b54c3-21bd-4640-bc6d-824ef812fc9b.jpg",
+					"fullName": "Robert Nordström",
+					"id": 62,
+					"createdNumberOfDaysAgo": 17,
+					"createdAgoString": "2v sedan"
+				},
+				"caption": "Nyaste bilden!",
+				"comments": 0,
+				"likes": [],
+				"id": 403,
+				"createdNumberOfDaysAgo": 1,
+				"createdAgoString": "1d sedan"
+			}
+		],
+		"title": "Media",
+		"caption": "Yeyy!",
+		"id": 155,
+		"createdNumberOfDaysAgo": 11,
+		"createdAgoString": "1v sedan"
+	},
+	{
+		inspirations:[
+			{
+				caption: 'A black labrador',
+				image: {
+					large: require('./black-labrador.jpg'),
+					small: require('./black-labrador.jpg'),
+					medium: require('./black-labrador.jpg'),
+					thumbnail: require('./black-labrador.jpg')
+				}
+			},
+			{
+				caption:'A pug puppy',
+				image: {
+					large: require('./pug-puppy.jpg'),
+					small: require('./pug-puppy.jpg'),
+					medium: require('./pug-puppy.jpg'),
+					thumbnail: require('./pug-puppy.jpg')
+				}
+			},
+			{
+				caption: 'A puppy',
+				image: {
+					large: require('./puppy.jpg'),
+					small: require('./puppy.jpg'),
+					medium: require('./puppy.jpg'),
+					thumbnail: require('./puppy.jpg')
+				}
+			},
+			{
+				caption: 'A yellow flower',
+				image: {
+					large: require('./yellow-flower.jpg'),
+					small: require('./yellow-flower.jpg'),
+					medium: require('./yellow-flower.jpg'),
+					thumbnail: require('./yellow-flower.jpg')
+				}
+			}
+		],
+		title:'Collage Title',
+		caption:'Collage Caption'
+	},
+	{
+		inspirations:[
+			{
+				image:{
+					large: require('./pug-treat.jpg'),
+					medium: require('./pug-treat.jpg'),
+					small: require('./pug-treat.jpg'),
+					thumbnail: require('./pug-treat.jpg')
+				}
+			}
+		],
+		title:'Puppies',
+		caption:'Puppies Caption'
+	},
+	{
+		"hobby": {
+			"created": "2018-05-28 22:37:57",
+			"updated": "2018-05-28 22:37:57",
+			"type": "HobbyDTO",
+			"hobbyId": 3,
+			"hobbyName": "Media, Sociala medier & Bloggar",
+			"description": "Public service till Snap och kändisbloggar",
+			"image": "/resources/images/hitHobbies/hithobbies_1.jpg",
+			"id": 3,
+			"createdNumberOfDaysAgo": 431,
+			"createdAgoString": "2må sedan"
+		}
+	}
+]
