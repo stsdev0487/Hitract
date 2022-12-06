@@ -3,8 +3,8 @@
   "description": "Tool to search codebase & help with troubleshooting",
   "dependencies": {
     "fxy": "^0.2.7",
-    "express": "^4.17.1",
-    "body-parser": "^1.19.0"
+    "express": "^4.18.2",
+    "body-parser": "^1.20.1"
   },
   "main": "package/index.js",
   "private": true,
